@@ -1,0 +1,24 @@
+{
+  "name": "brick-by-brick-prototype",
+  "version": "1.0.0",
+  "description": "This repository is my prototype for the Brick-by-Brick website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "npx sass --watch scss:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/00Wyatt/brick-by-brick-prototype.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/00Wyatt/brick-by-brick-prototype/issues"
+  },
+  "homepage": "https://github.com/00Wyatt/brick-by-brick-prototype#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}

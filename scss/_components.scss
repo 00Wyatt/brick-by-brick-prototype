@@ -1,0 +1,79 @@
+.container {
+    display: grid;
+    padding: 0 5%;
+}
+.logo {
+    color: $primary-3;
+    font-family: $heading;
+    font-size: 28px;
+    border: 3px solid $accent-0;
+    border-radius: $rounded;
+    padding: 10px 25px;
+}
+.btn {
+    min-width: fit-content;
+    color: $primary-3;
+    border: 3px solid $accent-0;
+    border-radius: $rounded;
+    padding: 8px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color $transition, opacity $transition;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &-filled {
+        @extend .btn;
+        background: $accent-0;
+
+        &:active {
+            opacity: 1;
+            background: transparent;
+        }
+    }
+
+    &-outline {
+        @extend .btn;
+        background: transparent;
+
+        &:active {
+            opacity: 1;
+            background: $accent-0;
+        }
+    }
+}
+.search-bar {
+    height: 39px;
+    font-weight: 500;
+    border: transparent;
+
+    & input {
+        @extend .search-bar;
+        min-width: 280px;
+        padding: 0 20px;
+        border-radius: $rounded 0 0 $rounded;
+        font-size: 18px;
+    }
+
+    & button {
+        @extend .search-bar;
+        background: $secondary-1;
+        color: $primary-3;
+        width: 60px;
+        font-size: 20px;
+        border-radius: 0 $rounded $rounded 0;
+        transition: opacity $transition;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+    }
+}
