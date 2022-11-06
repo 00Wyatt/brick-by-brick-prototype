@@ -1,6 +1,15 @@
-.container {
-    display: grid;
-    padding: 0 5%;
+/* Main Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: $primary-3;
+}
+::-webkit-scrollbar-thumb {
+    background: $primary-1;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
 }
 .logo {
     color: $primary-3;
@@ -74,6 +83,53 @@
 
         &:active {
             opacity: 0.7;
+        }
+    }
+}
+.link {
+    color: $primary-3;
+    transition: opacity $transition;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+.card {
+    background: $primary-3;
+    border-radius: $rounded;
+    box-shadow: $shadow-sml;
+    overflow: hidden;
+    transition: transform $transition, box-shadow $transition;
+
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: $shadow-med;
+    }
+
+    h3 a {
+        color: $secondary-1;
+        transition: opacity $transition;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    p a {
+        color: $accent-0;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 }

@@ -1,0 +1,86 @@
+.footer {
+    background: $secondary-0;
+
+    .container {
+        padding: 0 5%;
+    }
+
+    &__nav {
+        min-height: 220px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__logo {
+        @extend .logo;
+        justify-self: start;
+    }
+
+    li a {
+        @extend .link;
+    }
+
+    &__menu {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-flow: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    &__follow {
+        margin-bottom: 12px;
+        color: $primary-3;
+        text-align: end;
+        line-height: 0.9;
+        // margin: 0 0 15px 75%;
+        // padding-bottom: 10px;
+        // border-bottom: 1px solid $primary-2;
+
+        &::after {
+            content: "";
+            height: 1px;
+            width: 135px;
+            display: inline-block;
+            background: $primary-1;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: end;
+        gap: 14px;
+    }
+
+    &__info {
+        height: 100%;
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        border-top: 1px solid $primary-1;
+
+        p {
+            color: $primary-2;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        div:nth-child(1) {
+            display: flex;
+            justify-content: start;
+        }
+        p:nth-child(2) {
+            text-align: center;
+        }
+
+        p:nth-child(3) {
+            text-align: end;
+        }
+    }
+}

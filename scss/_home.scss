@@ -1,0 +1,265 @@
+.home {
+    section {
+        min-height: 740px;
+        display: grid;
+        align-items: center;
+
+        h2 {
+            font-size: 28px;
+
+            a {
+                transition: opacity $transition;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                &:active {
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        .container {
+            // padding: 0 8%;
+        }
+    }
+
+    .hero {
+        color: $primary-0;
+
+        &__text {
+            text-align: center;
+
+            h1 {
+                margin-bottom: 5px;
+                font-size: 40px;
+
+                span {
+                    color: $secondary-1;
+                }
+            }
+
+            p {
+                margin-bottom: 25px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .featured {
+        background: $secondary-1;
+
+        h2 a {
+            color: $secondary-1;
+        }
+
+        &__carousel {
+            background: $primary-2b;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 25px 50px 30px;
+            border-radius: $rounded;
+            box-shadow: $shadow-sml;
+        }
+
+        &__cards {
+            display: grid;
+            grid-auto-columns: 350px;
+            column-gap: 75px;
+            grid-auto-flow: column;
+            padding: 25px 15px 50px;
+            margin: 0 35px;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory; // What dis?
+            scroll-behavior: smooth;
+
+            .card {
+                @extend .card;
+
+                max-width: 350px;
+                color: $primary-0;
+                scroll-snap-align: center;
+
+                &__img {
+                    width: 350px;
+                    height: 200px;
+                    background-image: url("../assets/images/storm-trooper-lego.jpg");
+                    background-size: cover;
+                }
+
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 25px 35px 30px;
+                    line-height: 1.5;
+
+                    h3 a {
+                        font-size: 26px;
+                    }
+                }
+
+                &__desc {
+                    padding: 8px 0 20px;
+                }
+
+                &__view {
+                    align-self: center;
+                }
+            }
+
+            &::-webkit-scrollbar {
+                height: 12px;
+            }
+
+            &::-webkit-scrollbar-thumb,
+            &::-webkit-scrollbar-track {
+                border-radius: 25px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: $secondary-0;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: $primary-3;
+                box-shadow: $shadow-sml;
+                margin: 0 250px;
+            }
+        }
+    }
+
+    .themes {
+        background: $primary-2b;
+
+        h2 {
+            margin-bottom: 25px;
+
+            a {
+                color: $secondary-1;
+            }
+        }
+
+        &__cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 25px;
+            column-gap: 100px;
+
+            .card {
+                @extend .card;
+
+                max-width: 600px;
+                min-height: 140px;
+                display: flex;
+
+                &__img {
+                    width: 200px;
+                    height: 150px;
+                    background-image: url("../assets/images/storm-trooper-lego.jpg");
+                    background-size: cover;
+                }
+
+                &__text {
+                    width: 400px;
+                    padding: 30px 40px;
+                    line-height: 1.5;
+
+                    h3 a {
+                        font-size: 28px;
+                    }
+
+                    p {
+                        color: $primary-1;
+                    }
+                }
+            }
+
+            .see-more {
+                margin-top: 18px;
+                grid-column: span 2;
+                font-weight: 600;
+                text-align: center;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                a {
+                    color: $accent-0;
+                }
+            }
+        }
+    }
+
+    .blog {
+        background: $secondary-1;
+
+        h2 a {
+            color: $primary-3;
+        }
+
+        &__header {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            p a {
+                color: $primary-3;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 25px;
+            column-gap: 100px;
+
+            .card {
+                @extend .card;
+
+                max-width: 600px;
+                padding: 30px 45px;
+
+                h3 {
+                    margin-bottom: 10px;
+                    font-size: 28px;
+                }
+
+                p {
+                    margin-bottom: 15px;
+                    color: $primary-0;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+}
+
+// @media (min-width: 500px) {
+//     .cards {
+//         grid-auto-columns: calc(50% - 10px);
+//         grid-column-gap: 20px;
+//     }
+// }
+
+// @media (min-width: 700px) {
+//     .cards {
+//         grid-auto-columns: calc(calc(100% / 3) - 20px);
+//         grid-column-gap: 30px;
+//     }
+// }
+
+// @media (min-width: 1100px) {
+//     .cards {
+//         grid-auto-columns: calc(calc(100% / 3) - 30px);
+//         grid-column-gap: 40px;
+//     }
+// }

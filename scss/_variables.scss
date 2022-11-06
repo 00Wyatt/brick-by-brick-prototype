@@ -2,11 +2,12 @@
 $primary-0: #2A2B2B;
 $primary-1: #8F9394;
 $primary-2: #E4E9EB;
+$primary-2b: #F2F5F5;
 $primary-3: #FAFCFC;
 
 $secondary-0: #023047;
 $secondary-1: #219EBC;
-$secondary-2: #8ECAE6;
+$secondary-2: #2095B3;
 
 $accent-0: #FB8500;
 $accent-1: #FFB703;
@@ -16,5 +17,19 @@ $heading: 'Archivo', sans-serif;
 $paragraph:'Inter', sans-serif;
 
 // Utilities
-$rounded: 10px;
+$rounded: 8px;
 $transition: 150ms ease-in-out;
+$shadow-sml: 0 5px 12px rgb(0, 0, 0, 15%);
+$shadow-med: 0 7px 15px rgb(0, 0, 0, 18%);
+
+$breakpoint: (
+    "medium": "640px",
+    "large": "1150px",
+    "xlarge": "1400px",
+);
+
+@mixin breakpoint($size) {
+    @media (max-width: map-get($breakpoint, $size)) {
+        @content;
+    }
+}
