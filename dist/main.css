@@ -46,8 +46,8 @@ li {
 }
 
 .container {
-  margin: 0 auto;
   display: grid;
+  margin: 0 auto;
 }
 
 /* Main Scrollbar */
@@ -527,11 +527,8 @@ header .container {
   line-height: 1.3;
 }
 
-.about {
-  display: grid;
-  align-items: center;
-}
 .about .container {
+  justify-items: center;
   padding: 0 30px;
 }
 .about__content {
@@ -586,6 +583,51 @@ header .container {
   background: #E4E9EB;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.contact .container {
+  justify-items: center;
+  padding: 0 30px;
+}
+.contact__content {
+  background: #FAFCFC;
+  margin: 10vh 0;
+  padding: 40px 35px;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  display: grid;
+}
+.contact__content h1 {
+  color: #219EBC;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.contact__content p {
+  margin-bottom: 25px;
+}
+.contact__form {
+  display: grid;
+}
+.contact__form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.contact__form input, .contact__form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 1px solid #8F9394;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+.contact__form textarea {
+  min-height: 200px;
+}
+.contact__form button {
+  justify-self: start;
+  padding: 3px 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
