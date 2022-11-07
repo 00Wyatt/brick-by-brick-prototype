@@ -1,0 +1,67 @@
+.about {
+    display: grid;
+    align-items: center;
+
+    .container {
+        padding: 0 30px;
+    }
+
+    &__content {
+        background: $primary-white-2;
+        max-width: 1150px;
+        margin: 10vh 0;
+        padding: 50px;
+        border-radius: $rounded;
+        box-shadow: $shadow-sml;
+        display: grid;
+
+        @include breakpoint(medium) {
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+
+    &__text {
+        display: grid;
+        line-height: 1.5;
+
+        @include breakpoint(medium) {
+            padding: 0 60px 0 25px;
+        }
+
+        h1 {
+            color: $secondary-1;
+            font-size: 32px;
+            margin-bottom: 10px;
+
+            @include breakpoint(small) {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            @extend .link-underline;
+        }
+    }
+
+    &__images {
+        display: none;
+        justify-content: center;
+        row-gap: 40px;
+
+        @include breakpoint(medium) {
+            display: grid;
+        }
+
+        div {
+            width: 300px;
+            height: 250px;
+            background: $primary-white-0;
+            border-radius: $rounded;
+            overflow: hidden;
+        }
+    }
+}

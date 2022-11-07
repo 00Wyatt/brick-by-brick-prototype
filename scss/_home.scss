@@ -20,13 +20,13 @@
             }
         }
 
-        .container {
-            // padding: 0 8%;
-        }
+        // .container {
+        //     padding: 0 8%;
+        // }
     }
 
     .hero {
-        color: $primary-0;
+        color: $primary-text;
 
         &__text {
             text-align: center;
@@ -52,16 +52,16 @@
         background: $secondary-1;
 
         h2 a {
-            color: $secondary-1;
+            color: $primary-white-2;
         }
 
         &__carousel {
-            background: $primary-2b;
+            // background: $primary-2b;
             max-width: 1400px;
             margin: 0 auto;
             padding: 25px 50px 30px;
-            border-radius: $rounded;
-            box-shadow: $shadow-sml;
+            // border-radius: $rounded;
+            // box-shadow: $shadow-sml;
         }
 
         &__cards {
@@ -79,7 +79,7 @@
                 @extend .card;
 
                 max-width: 350px;
-                color: $primary-0;
+                color: $primary-text;
                 scroll-snap-align: center;
 
                 &__img {
@@ -124,7 +124,7 @@
             }
 
             &::-webkit-scrollbar-track {
-                background: $primary-3;
+                background: $primary-white-2;
                 box-shadow: $shadow-sml;
                 margin: 0 250px;
             }
@@ -132,7 +132,7 @@
     }
 
     .themes {
-        background: $primary-2b;
+        background: $primary-white-1;
 
         h2 {
             margin-bottom: 25px;
@@ -172,7 +172,7 @@
                     }
 
                     p {
-                        color: $primary-1;
+                        color: $primary-grey;
                     }
                 }
             }
@@ -198,7 +198,7 @@
         background: $secondary-1;
 
         h2 a {
-            color: $primary-3;
+            color: $primary-white-2;
         }
 
         &__header {
@@ -208,7 +208,7 @@
             align-items: baseline;
 
             p a {
-                color: $primary-3;
+                color: $primary-white-2;
 
                 &:hover {
                     text-decoration: underline;
@@ -235,7 +235,7 @@
 
                 p {
                     margin-bottom: 15px;
-                    color: $primary-0;
+                    color: $primary-text;
                     line-height: 1.3;
                 }
             }

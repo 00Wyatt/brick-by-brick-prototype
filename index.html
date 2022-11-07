@@ -31,11 +31,17 @@
             <div class="container">
                 <nav>
                     <ul class="nav-two__menu">
-                        <li class="nav-two__current"><a href="#" aria-current="page">Home</a></li>
-                        <li><a href="#">Collection</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a class="nav-two__current" href="./index.html" aria-current="page">Home</a></li>
+                        <li class="nav-two__dropdown">
+                            <a class="nav-two__drop-btn" href="./collection.html">Collection <i class="bi bi-caret-down-fill"></i></a>
+                            <div class="nav-two__drop-content">
+                                <a href="./themes.html">Themes</a>
+                                <a href="./mocs.html">MOCs</a>
+                            </div>
+                        </li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
                     </ul>
                     <ul class="nav-two__socials">
                         <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
@@ -289,12 +295,12 @@
             <nav class="footer__nav">
                 <a class="footer__logo" href="#">Brick-by-Brick</a>
                 <ul class="footer__menu">
-                    <li><a href="#">Collection</a></li>
-                    <li><a href="#">Themes</a></li>
-                    <li><a href="#">MOCs</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="./collection.html">Collection</a></li>
+                    <li><a href="./themes.html">Themes</a></li>
+                    <li><a href="./mocs.html">MOCs</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
                 </ul>
                 <div>
                     <P class="footer__follow">Follow Me<br /></P>
@@ -320,13 +326,18 @@
 </html>
 
 
-<!-- 
+<!-- Make responsive
 
-    Git commit after finishing homepage
-    Make responsive
-    Look at W3C dropdowns
-    
     Work on colors and create different shades
     Re-arrange the SASS files to structure it all better
     
 -->
+
+
+<!-- <ul class="nav-two__menu">
+    <li class="nav-two__current"><a href="#" aria-current="page">Home</a></li>
+    <li><a href="#">Collection <i class="bi bi-caret-down-fill"></i></a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Blog</a></li>
+</ul> -->

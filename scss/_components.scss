@@ -3,16 +3,16 @@
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: $primary-3;
+    background: $primary-white-2;
 }
 ::-webkit-scrollbar-thumb {
-    background: $primary-1;
+    background: $primary-grey;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #444;
 }
 .logo {
-    color: $primary-3;
+    color: $primary-white-2;
     font-family: $heading;
     font-size: 28px;
     border: 3px solid $accent-0;
@@ -21,7 +21,7 @@
 }
 .btn {
     min-width: fit-content;
-    color: $primary-3;
+    color: $primary-white-2;
     border: 3px solid $accent-0;
     border-radius: $rounded;
     padding: 8px 10px;
@@ -70,7 +70,7 @@
     & button {
         @extend .search-bar;
         background: $secondary-1;
-        color: $primary-3;
+        color: $primary-white-2;
         width: 60px;
         font-size: 20px;
         border-radius: 0 $rounded $rounded 0;
@@ -86,10 +86,8 @@
         }
     }
 }
-.link {
-    color: $primary-3;
+.link-dim {
     transition: opacity $transition;
-    cursor: pointer;
 
     &:hover {
         opacity: 0.8;
@@ -99,8 +97,16 @@
         opacity: 0.6;
     }
 }
+.link-underline {
+    color: $accent-0;
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
 .card {
-    background: $primary-3;
+    background: $primary-white-2;
     border-radius: $rounded;
     box-shadow: $shadow-sml;
     overflow: hidden;
@@ -112,24 +118,11 @@
     }
 
     h3 a {
+        @extend .link-dim;
         color: $secondary-1;
-        transition: opacity $transition;
-
-        &:hover {
-            opacity: 0.8;
-        }
-
-        &:active {
-            opacity: 0.6;
-        }
     }
 
     p a {
-        color: $accent-0;
-        font-weight: 600;
-
-        &:hover {
-            text-decoration: underline;
-        }
+        @extend .link-underline;
     }
 }
