@@ -1,0 +1,112 @@
+.themes {
+    .container {
+        justify-items: center;
+        padding: 0 30px;
+
+        @include breakpoint(small) {
+            padding: 0 60px;
+        }
+
+        @include breakpoint(large) {
+            padding: 0 20px;
+        }
+    }
+
+    &__content {
+        display: grid;
+        margin: 10vh 0;
+
+        h1 {
+            color: $secondary-1;
+            margin-bottom: 20px;
+            font-size: 36px;
+
+            @include breakpoint(xsmall) {
+                font-size: 40px;
+            }
+        }
+
+        & > p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        row-gap: 30px;
+
+        @include breakpoint(large) {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 50px;
+        }
+
+        .card {
+            display: flex;
+
+            @include breakpoint(large) {
+                max-width: 575px;
+            }
+
+            &__img {
+                display: none;
+                max-height: 190px;
+
+                @include breakpoint(small) {
+                    max-width: 30%;
+                    padding: 10px 0 10px 10px;
+                    display: grid;
+                    align-items: center;
+                }
+
+                @include breakpoint(medium) {
+                    max-width: 30%;
+                    padding: 0;
+                }
+
+                @include breakpoint(large) {
+                    max-width: 42%;
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: $rounded;
+                    overflow: hidden;
+
+                    @include breakpoint(medium) {
+                        border-radius: 0px;
+                    }
+                }
+            }
+
+            &__text {
+                padding: 25px 30px;
+                line-height: 1.5;
+
+                h3 a {
+                    font-size: 28px;
+                }
+            }
+
+            &__desc {
+                margin-bottom: 10px;
+            }
+
+            &__info {
+                color: $primary-grey;
+            }
+        }
+    }
+
+    &__load-more {
+        margin-top: 15px;
+        justify-self: center;
+
+        @include breakpoint(large) {
+            grid-column: span 2;
+        }
+
+        a {
+            @extend .link-underline;
+        }
+    }
+}

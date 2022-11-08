@@ -76,8 +76,6 @@
             scroll-behavior: smooth;
 
             .card {
-                @extend .card;
-
                 max-width: 350px;
                 color: $primary-text;
                 scroll-snap-align: center;
@@ -149,8 +147,6 @@
             column-gap: 100px;
 
             .card {
-                @extend .card;
-
                 max-width: 600px;
                 min-height: 140px;
                 display: flex;
@@ -223,8 +219,6 @@
             column-gap: 100px;
 
             .card {
-                @extend .card;
-
                 max-width: 600px;
                 padding: 30px 45px;
 

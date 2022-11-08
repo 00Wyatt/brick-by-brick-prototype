@@ -118,7 +118,7 @@
         box-shadow: $shadow-med;
     }
 
-    h3 a {
+    h2 a, h3 a {
         @extend .link-dim;
         color: $secondary-1;
     }
