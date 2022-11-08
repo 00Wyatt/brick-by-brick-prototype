@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="./dist/main.css">
-    <title>Themes - Brick-by-Brick</title>
+    <title>Collection - Brick-by-Brick</title>
 </head>
 
 <body>
@@ -55,101 +55,135 @@
             </div>
         </div>
     </header>
-    <main class="themes">
+    <main class="blog">
         <div class="container">
-            <div class="themes__content">
-                <h1>Themes</h1>
-                <p>Showing 8 out of 18 Themes</p>
-                <div class="themes__cards">
+            <div class="collection__content">
+                <h1>Lorem Ipsum’s Collection</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices volutpat orci, velit aenean
+                    bibendum.<br />Adipiscing at ultrices sapien, vel, ac.</p>
+                <div class="collection__filters">
+                    <div>
+                        <p class="collection__theme">
+                            Select Theme <i class="bi bi-chevron-down"></i>
+                        </p>
+                        <div>
+                            <input type="radio" name="filter" id="all" checked>
+                            <label for="all">All</label>
+                            <input type="radio" name="filter" id="sets">
+                            <label for="sets">Sets</label>
+                            <input type="radio" name="filter" id="mocs">
+                            <label for="mocs">MOCs</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="collection__layout">
+                            <i class="bi bi-grid-3x2"></i>
+                        </div>
+                        <div class="collection__layout--fade">
+                            <i class="bi bi-card-list"></i>
+                        </div>
+                        <p class="collection__sort">
+                            <span>Sort by:</span> Latest <i class="bi bi-chevron-down"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="collection__pagination">
+                    <div>
+                        <p class="collection__num-pages">20 <i class="bi bi-chevron-down"></i></p>
+                        <p>Showing 1 to 20 out of 232</p>
+                    </div>
+                    <ul class="collection__pages">
+                        <li><i class="bi bi-chevron-left"></i>Prev</li>
+                        <li><a class="current" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">Next<i class="bi bi-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="collection__cards">
                     <div class="card">
-                        <a class="card__img" href="./collection.html">
+                        <a class="card__img" href="./set-show.html">
                             <img src="./assets/images/storm-trooper-lego.jpg" alt="LEGO Stormtrooper and C-3PO">
                         </a>
                         <div class="card__text">
-                            <h2><a href="./collection.html">Lorem Ipsum Dolor</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <h2><a href="./set-show.html">Lorem Ipsum Dolor</a></h2>
+                            <p><a href="#">Star Wars</a></p>
+                            <p class="card__desc">Sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus venenatis, lectus magna fringilla urna.</p>
+                            <p class="card__view"><a href="#">View Set <i class="bi bi-chevron-right"></i></a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <a class="card__img" href="./collection.html">
+                        <a class="card__img" href="./set-show.html">
                             <img src="./assets/images/storm-trooper-lego.jpg" alt="LEGO Stormtrooper and C-3PO">
                         </a>
                         <div class="card__text">
-                            <h2><a href="./collection.html">Lorem Ipsum Dolor</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <h2><a href="./set-show.html">Lorem Ipsum Dolor</a></h2>
+                            <p><a href="#">Star Wars</a></p>
+                            <p class="card__desc">Sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus venenatis, lectus magna fringilla urna.</p>
+                            <p class="card__view"><a href="#">View Set <i class="bi bi-chevron-right"></i></a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <a class="card__img" href="./collection.html">
+                        <a class="card__img" href="./set-show.html">
                             <img src="./assets/images/storm-trooper-lego.jpg" alt="LEGO Stormtrooper and C-3PO">
                         </a>
                         <div class="card__text">
-                            <h2><a href="./collection.html">Lorem Ipsum Dolor</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <h2><a href="./set-show.html">Lorem Ipsum Dolor</a></h2>
+                            <p><a href="#">Star Wars</a></p>
+                            <p class="card__desc">Sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus venenatis, lectus magna fringilla urna.</p>
+                            <p class="card__view"><a href="#">View Set <i class="bi bi-chevron-right"></i></a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <a class="card__img" href="./collection.html">
+                        <a class="card__img" href="./set-show.html">
                             <img src="./assets/images/storm-trooper-lego.jpg" alt="LEGO Stormtrooper and C-3PO">
                         </a>
                         <div class="card__text">
-                            <h2><a href="./collection.html">Lorem Ipsum Dolor</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <h2><a href="./set-show.html">Lorem Ipsum Dolor</a></h2>
+                            <p><a href="#">Star Wars</a></p>
+                            <p class="card__desc">Sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus venenatis, lectus magna fringilla urna.</p>
+                            <p class="card__view"><a href="#">View Set <i class="bi bi-chevron-right"></i></a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <a class="card__img" href="./collection.html">
+                        <a class="card__img" href="./set-show.html">
                             <img src="./assets/images/storm-trooper-lego.jpg" alt="LEGO Stormtrooper and C-3PO">
                         </a>
                         <div class="card__text">
-                            <h2><a href="./collection.html">Lorem Ipsum Dolor</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <h2><a href="./set-show.html">Lorem Ipsum Dolor</a></h2>
+                            <p><a href="#">Star Wars</a></p>
+                            <p class="card__desc">Sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus venenatis, lectus magna fringilla urna.</p>
+                            <p class="card__view"><a href="#">View Set <i class="bi bi-chevron-right"></i></a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <a class="card__img" href="./collection.html">
+                        <a class="card__img" href="./set-show.html">
                             <img src="./assets/images/storm-trooper-lego.jpg" alt="LEGO Stormtrooper and C-3PO">
                         </a>
                         <div class="card__text">
-                            <h2><a href="./collection.html">Lorem Ipsum Dolor</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <h2><a href="./set-show.html">Lorem Ipsum Dolor</a></h2>
+                            <p><a href="#">Star Wars</a></p>
+                            <p class="card__desc">Sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus venenatis, lectus magna fringilla urna.</p>
+                            <p class="card__view"><a href="#">View Set <i class="bi bi-chevron-right"></i></a></p>
                         </div>
                     </div>
-                    <div class="card">
-                        <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/storm-trooper-lego.jpg" alt="LEGO Stormtrooper and C-3PO">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./collection.html">Lorem Ipsum Dolor</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/storm-trooper-lego.jpg" alt="LEGO Stormtrooper and C-3PO">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./collection.html">Lorem Ipsum Dolor</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
-                        </div>
-                    </div>
-                    <p class="themes__load-more"><a href="#">Load More <i class="bi bi-chevron-down"></i></a></p>
+                    <ul class="collection__pages--bottom">
+                        <li><i class="bi bi-chevron-left"></i>Prev</li>
+                        <li><a class="current" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">Next<i class="bi bi-chevron-right"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>

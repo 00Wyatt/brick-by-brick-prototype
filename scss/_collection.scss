@@ -1,0 +1,148 @@
+.collection {
+    .container {
+        justify-items: center;
+        padding: 0 30px;
+    }
+
+    &__content {
+        max-width: 1200px;
+        margin: 10vh 0;
+        display: grid;
+        gap: 18px;
+
+        h1 {
+            color: $secondary-1;
+            font-size: 40px;
+        }
+
+        > p {
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+    }
+
+    &__filters {
+        display: flex;
+        justify-content: space-between;
+
+        > div {
+            display: flex;
+            align-items: center;
+
+            input {
+                margin: 0 0 0 10px;
+                cursor: pointer;
+            }
+
+            label {
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__theme {
+        @extend .filter;
+        margin-right: 10px
+    }
+
+    &__layout {
+        @extend .filter;
+        font-size: 25px;
+        padding: 0 3px;
+        margin-right: 5px;
+
+        &--fade {
+            @extend .collection__layout;
+            color: $primary-grey
+        }
+    }
+
+    &__sort {
+        @extend .filter;
+        margin-left: 10px;
+
+        span {
+            color: $primary-grey;
+        }
+    }
+
+    &__pagination {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+
+        > div {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__pages {
+        justify-self: center;
+        display: flex;
+        gap: 7px;
+        color: $primary-grey;
+        font-weight: 500;
+
+        a {
+            color: $primary-text;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .current {
+            color: $secondary-1;
+            font-weight: 600;
+        }
+
+        &--bottom {
+            @extend .collection__pages;
+            grid-column: span 3;
+        }
+    }
+
+    &__num-pages {
+        @extend .filter;
+        padding: 5px 6px;
+        margin-right: 10px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+
+        .card {
+            max-width: 350px;
+            color: $primary-text;
+
+            &__img {
+                width: 350px;
+                height: 200px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__text {
+                display: grid;
+                padding: 25px 35px 30px;
+                line-height: 1.5;
+
+                h3 a {
+                    font-size: 26px;
+                }
+            }
+
+            &__desc {
+                padding: 8px 0 20px;
+            }
+
+            &__view {
+                justify-self: center;
+            }
+        }
+    }
+}
