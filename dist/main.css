@@ -48,11 +48,6 @@ li {
   list-style: none;
 }
 
-.container {
-  display: grid;
-  margin: 0 auto;
-}
-
 /* Main Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -70,13 +65,17 @@ li {
   background: #444;
 }
 
+.container {
+  display: grid;
+  margin: 0 auto;
+}
+
 .logo, .footer__logo, .nav-one__logo {
-  color: #FAFCFC;
-  font-family: "Archivo", sans-serif;
-  font-size: 28px;
-  border: 3px solid #FB8500;
+  background: #023047;
   border-radius: 8px;
-  padding: 10px 25px;
+}
+.logo img, .footer__logo img, .nav-one__logo img {
+  width: 300px;
 }
 
 .btn, .btn-outline, .btn-filled {
@@ -235,6 +234,9 @@ header .container {
 .nav-two__menu li:hover {
   background: #1F91AD;
 }
+.nav-two__menu li:hover .nav-two__current::after {
+  display: none;
+}
 .nav-two__menu li a {
   height: 100%;
   padding: 12px;
@@ -246,9 +248,8 @@ header .container {
   content: "";
   position: absolute;
   height: 5px;
-  width: 100%;
+  width: calc(100% - 24px);
   bottom: 0;
-  left: 0;
   background: #FAFCFC;
 }
 .nav-two__dropdown:hover .nav-two__drop-content {
@@ -420,7 +421,7 @@ header .container {
 .home .featured-sets__cards .card__img {
   width: 350px;
   height: 200px;
-  background-image: url("../assets/images/storm-trooper-lego.jpg");
+  background-image: url("../assets/images/lego-stormtrooper.jpg");
   background-size: cover;
 }
 .home .featured-sets__cards .card__text {
@@ -476,7 +477,7 @@ header .container {
 .home .themes-preview__cards .card__img {
   width: 200px;
   height: 150px;
-  background-image: url("../assets/images/storm-trooper-lego.jpg");
+  background-image: url("../assets/images/lego-stormtrooper.jpg");
   background-size: cover;
 }
 .home .themes-preview__cards .card__text {

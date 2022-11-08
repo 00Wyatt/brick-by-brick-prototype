@@ -68,6 +68,10 @@ header {
             li {
                 &:hover {
                     background: $secondary-1b;
+
+                    .nav-two__current::after {
+                        display: none;
+                    }
                 }
 
                 a {
@@ -84,9 +88,8 @@ header {
             content: "";
             position: absolute;
             height: 5px;
-            width: 100%;
+            width: calc(100% - 24px);
             bottom: 0;
-            left: 0;
             background: $primary-white-2;
         }
 
@@ -136,96 +139,3 @@ header {
         }
     }
 }
-
-// .container {
-//     padding: 0 5%;
-// }
-// }
-// .nav {
-// font-size: 18px;
-// font-weight: 500;
-
-// &-one {
-//     @extend .nav;
-//     background: $secondary-0;
-
-//     &__nav {
-//         min-height: 70px;
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//     }
-
-//     &__logo {
-//         @extend .logo;
-//     }
-
-//     &__menu {
-//         display: flex;
-//         align-items: center;
-//         gap: 10px;
-//     }
-
-//     &__search-bar {
-//         @extend .search-bar;
-//         margin-right: 10px;
-//     }
-// }
-
-// &-two {
-//     @extend .nav;
-//     background: $secondary-1;
-
-//     nav {
-//         min-height: 50px;
-//         display: grid;
-//         grid-template-columns: 1fr 3fr 1fr;
-//         align-items: center;
-//     }
-
-//     li {
-//         // @extend .link;
-
-//         &:hover {
-//             background: $secondary-2;
-//         }
-
-//         a {
-//             color: $primary-3;
-//         }
-//     }
-
-//     &__menu {
-//         height: 100%;
-//         grid-column: 2;
-//         padding: 0 5%;
-//         display: flex;
-//         justify-content: space-around;
-
-//         @include breakpoint(large) {
-//             grid-column: span 2;
-//         }
-
-//         li {
-//             display: grid;
-//             align-items: center;
-//             position: relative;
-//         }
-//     }
-
-//     &__current::after {
-//         content: "";
-//         position: absolute;
-//         height: 5px;
-//         width: 100%;
-//         bottom: 0;
-//         background: $primary-3;
-//     }
-
-//     &__socials {
-//         display: flex;
-//         justify-content: end;
-//         gap: 14px;
-//     }
-// }
-// }

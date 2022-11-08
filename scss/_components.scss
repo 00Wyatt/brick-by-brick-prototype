@@ -11,13 +11,17 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #444;
 }
+.container {
+    display: grid;
+    margin: 0 auto;
+}
 .logo {
-    color: $primary-white-2;
-    font-family: $heading;
-    font-size: 28px;
-    border: 3px solid $accent-0;
+    background: $secondary-0;
     border-radius: $rounded;
-    padding: 10px 25px;
+
+    img {
+        width: 300px;
+    }
 }
 .btn {
     min-width: fit-content;
