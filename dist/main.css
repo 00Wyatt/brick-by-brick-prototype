@@ -31,9 +31,12 @@ a:active {
 }
 
 h1,
-h3,
+h2,
 h3 {
   font-family: "Archivo", sans-serif;
+}
+
+h1 {
   font-weight: 800;
 }
 
@@ -105,18 +108,19 @@ li {
   background: #FB8500;
 }
 
-.search-bar, .nav-one__search-bar, .nav-one__search-bar input, .nav-one__search-bar button, .search-bar button, .search-bar input {
+.search-bar, .blog__search-bar, .blog__search-bar input, .blog__search-bar button, .nav-one__search-bar, .nav-one__search-bar input, .nav-one__search-bar button, .search-bar button, .search-bar input {
   height: 39px;
   font-weight: 500;
   border: transparent;
 }
-.search-bar input, .nav-one__search-bar input {
+.search-bar input, .blog__search-bar input, .nav-one__search-bar input {
+  background: #FAFCFC;
   min-width: 280px;
   padding: 0 20px;
   border-radius: 8px 0 0 8px;
   font-size: 18px;
 }
-.search-bar button, .nav-one__search-bar button {
+.search-bar button, .blog__search-bar button, .nav-one__search-bar button {
   background: #219EBC;
   color: #FAFCFC;
   width: 60px;
@@ -125,45 +129,54 @@ li {
   transition: opacity 150ms ease-in-out;
   cursor: pointer;
 }
-.search-bar button:hover, .nav-one__search-bar button:hover {
+.search-bar button:hover, .blog__search-bar button:hover, .nav-one__search-bar button:hover {
   opacity: 0.9;
 }
-.search-bar button:active, .nav-one__search-bar button:active {
+.search-bar button:active, .blog__search-bar button:active, .nav-one__search-bar button:active {
   opacity: 0.7;
 }
 
-.link-dim, .footer li a, .nav-two__socials a, .card h3 a, .home .blog__cards .card h3 a, .home .themes__cards .card h3 a, .home .featured__cards .card h3 a {
+.link-dim, .footer li a, .nav-two__socials a, .card h3 a, .home .blog-preview__cards .card h3 a, .home .themes-preview__cards .card h3 a, .home .featured-sets__cards .card h3 a {
   transition: opacity 150ms ease-in-out;
 }
-.link-dim:hover, .footer li a:hover, .nav-two__socials a:hover, .card h3 a:hover, .home .blog__cards .card h3 a:hover, .home .themes__cards .card h3 a:hover, .home .featured__cards .card h3 a:hover {
+.link-dim:hover, .footer li a:hover, .nav-two__socials a:hover, .card h3 a:hover, .home .blog-preview__cards .card h3 a:hover, .home .themes-preview__cards .card h3 a:hover, .home .featured-sets__cards .card h3 a:hover {
   opacity: 0.8;
 }
-.link-dim:active, .footer li a:active, .nav-two__socials a:active, .card h3 a:active, .home .blog__cards .card h3 a:active, .home .themes__cards .card h3 a:active, .home .featured__cards .card h3 a:active {
+.link-dim:active, .footer li a:active, .nav-two__socials a:active, .card h3 a:active, .home .blog-preview__cards .card h3 a:active, .home .themes-preview__cards .card h3 a:active, .home .featured-sets__cards .card h3 a:active {
   opacity: 0.6;
 }
 
-.link-underline, .about__text a, .card p a, .home .blog__cards .card p a, .home .themes__cards .card p a, .home .featured__cards .card p a {
+.link-underline, .blog-show__info a, .blog-show__back a, .blog__load-more a, .blog__menu a, .about__text a, .card p a, .home .blog-preview__cards .card p a, .home .themes-preview__cards .card p a, .home .featured-sets__cards .card p a {
   color: #FB8500;
   font-weight: 600;
 }
-.link-underline:hover, .about__text a:hover, .card p a:hover, .home .blog__cards .card p a:hover, .home .themes__cards .card p a:hover, .home .featured__cards .card p a:hover {
+.link-underline:hover, .blog-show__info a:hover, .blog-show__back a:hover, .blog__load-more a:hover, .blog__menu a:hover, .about__text a:hover, .card p a:hover, .home .blog-preview__cards .card p a:hover, .home .themes-preview__cards .card p a:hover, .home .featured-sets__cards .card p a:hover {
   text-decoration: underline;
 }
 
-.card, .home .blog__cards .card, .home .themes__cards .card, .home .featured__cards .card {
+.card, .home .blog-preview__cards .card, .home .themes-preview__cards .card, .home .featured-sets__cards .card {
   background: #FAFCFC;
   border-radius: 8px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out;
 }
-.card:hover, .home .blog__cards .card:hover, .home .themes__cards .card:hover, .home .featured__cards .card:hover {
+.card:hover, .home .blog-preview__cards .card:hover, .home .themes-preview__cards .card:hover, .home .featured-sets__cards .card:hover {
   transform: scale(1.01);
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.18);
 }
-.card h3 a, .home .blog__cards .card h3 a, .home .themes__cards .card h3 a, .home .featured__cards .card h3 a {
+.card h3 a, .home .blog-preview__cards .card h3 a, .home .themes-preview__cards .card h3 a, .home .featured-sets__cards .card h3 a {
   color: #219EBC;
 }
+.filter, .blog__sort {
+  background: #FAFCFC;
+  padding: 5px 18px;
+  border: 1px solid #8F9394;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
 header .container {
   padding: 0 5%;
 }
@@ -377,18 +390,18 @@ header .container {
   font-size: 18px;
   font-weight: 600;
 }
-.home .featured {
+.home .featured-sets {
   background: #219EBC;
 }
-.home .featured h2 a {
+.home .featured-sets h2 a {
   color: #FAFCFC;
 }
-.home .featured__carousel {
+.home .featured-sets__carousel {
   max-width: 1400px;
   margin: 0 auto;
   padding: 25px 50px 30px;
 }
-.home .featured__cards {
+.home .featured-sets__cards {
   display: grid;
   grid-auto-columns: 350px;
   column-gap: 75px;
@@ -399,129 +412,129 @@ header .container {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
-.home .featured__cards .card {
+.home .featured-sets__cards .card {
   max-width: 350px;
   color: #2A2B2B;
   scroll-snap-align: center;
 }
-.home .featured__cards .card__img {
+.home .featured-sets__cards .card__img {
   width: 350px;
   height: 200px;
   background-image: url("../assets/images/storm-trooper-lego.jpg");
   background-size: cover;
 }
-.home .featured__cards .card__text {
+.home .featured-sets__cards .card__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 25px 35px 30px;
   line-height: 1.5;
 }
-.home .featured__cards .card__text h3 a {
+.home .featured-sets__cards .card__text h3 a {
   font-size: 26px;
 }
-.home .featured__cards .card__desc {
+.home .featured-sets__cards .card__desc {
   padding: 8px 0 20px;
 }
-.home .featured__cards .card__view {
+.home .featured-sets__cards .card__view {
   align-self: center;
 }
-.home .featured__cards::-webkit-scrollbar {
+.home .featured-sets__cards::-webkit-scrollbar {
   height: 12px;
 }
-.home .featured__cards::-webkit-scrollbar-thumb, .home .featured__cards::-webkit-scrollbar-track {
+.home .featured-sets__cards::-webkit-scrollbar-thumb, .home .featured-sets__cards::-webkit-scrollbar-track {
   border-radius: 25px;
 }
-.home .featured__cards::-webkit-scrollbar-thumb {
+.home .featured-sets__cards::-webkit-scrollbar-thumb {
   background: #023047;
 }
-.home .featured__cards::-webkit-scrollbar-track {
+.home .featured-sets__cards::-webkit-scrollbar-track {
   background: #FAFCFC;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
   margin: 0 250px;
 }
-.home .themes {
+.home .themes-preview {
   background: #F2F5F5;
 }
-.home .themes h2 {
+.home .themes-preview h2 {
   margin-bottom: 25px;
 }
-.home .themes h2 a {
+.home .themes-preview h2 a {
   color: #219EBC;
 }
-.home .themes__cards {
+.home .themes-preview__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 25px;
   column-gap: 100px;
 }
-.home .themes__cards .card {
+.home .themes-preview__cards .card {
   max-width: 600px;
   min-height: 140px;
   display: flex;
 }
-.home .themes__cards .card__img {
+.home .themes-preview__cards .card__img {
   width: 200px;
   height: 150px;
   background-image: url("../assets/images/storm-trooper-lego.jpg");
   background-size: cover;
 }
-.home .themes__cards .card__text {
+.home .themes-preview__cards .card__text {
   width: 400px;
   padding: 30px 40px;
   line-height: 1.5;
 }
-.home .themes__cards .card__text h3 a {
+.home .themes-preview__cards .card__text h3 a {
   font-size: 28px;
 }
-.home .themes__cards .card__text p {
+.home .themes-preview__cards .card__text p {
   color: #8F9394;
 }
-.home .themes__cards .see-more {
+.home .themes-preview__cards .see-more {
   margin-top: 18px;
   grid-column: span 2;
   font-weight: 600;
   text-align: center;
 }
-.home .themes__cards .see-more:hover {
+.home .themes-preview__cards .see-more:hover {
   text-decoration: underline;
 }
-.home .themes__cards .see-more a {
+.home .themes-preview__cards .see-more a {
   color: #FB8500;
 }
-.home .blog {
+.home .blog-preview {
   background: #219EBC;
 }
-.home .blog h2 a {
+.home .blog-preview h2 a {
   color: #FAFCFC;
 }
-.home .blog__header {
+.home .blog-preview__header {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.home .blog__header p a {
+.home .blog-preview__header p a {
   color: #FAFCFC;
 }
-.home .blog__header p a:hover {
+.home .blog-preview__header p a:hover {
   text-decoration: underline;
 }
-.home .blog__cards {
+.home .blog-preview__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 25px;
   column-gap: 100px;
 }
-.home .blog__cards .card {
+.home .blog-preview__cards .card {
   max-width: 600px;
   padding: 30px 45px;
 }
-.home .blog__cards .card h3 {
+.home .blog-preview__cards .card h3 {
   margin-bottom: 10px;
   font-size: 28px;
 }
-.home .blog__cards .card p {
+.home .blog-preview__cards .card p {
   margin-bottom: 15px;
   color: #2A2B2B;
   line-height: 1.3;
@@ -600,7 +613,12 @@ header .container {
 .contact__content h1 {
   color: #219EBC;
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 36px;
+}
+@media (min-width: 450px) {
+  .contact__content h1 {
+    font-size: 40px;
+  }
 }
 .contact__content p {
   margin-bottom: 25px;
@@ -614,6 +632,7 @@ header .container {
   font-weight: 500;
 }
 .contact__form input, .contact__form textarea {
+  background: #FAFCFC;
   width: 100%;
   margin-bottom: 20px;
   padding: 5px;
@@ -628,6 +647,145 @@ header .container {
 .contact__form button {
   justify-self: start;
   padding: 3px 10px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blog .container {
+  justify-items: center;
+  padding: 0 30px;
+}
+.blog__content {
+  display: grid;
+  margin: 10vh 0;
+}
+.blog__content h1 {
+  color: #219EBC;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+@media (min-width: 450px) {
+  .blog__content h1 {
+    font-size: 40px;
+  }
+}
+.blog__search-bar {
+  display: none;
+  justify-self: start;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 450px) {
+  .blog__search-bar {
+    display: block;
+  }
+}
+.blog__filters {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog__sort span {
+  color: #8F9394;
+}
+.blog__cards {
+  max-width: 1200px;
+  display: grid;
+  row-gap: 25px;
+}
+.blog__cards .card, .blog__cards .home .featured-sets__cards .card, .home .featured-sets__cards .blog__cards .card, .blog__cards .home .themes-preview__cards .card, .home .themes-preview__cards .blog__cards .card, .blog__cards .home .blog-preview__cards .card, .home .blog-preview__cards .blog__cards .card {
+  display: flex;
+}
+.blog__cards .card__img {
+  display: none;
+  max-width: 25%;
+}
+@media (min-width: 1150px) {
+  .blog__cards .card__img {
+    display: grid;
+  }
+}
+.blog__cards .card__img img {
+  width: 100%;
+}
+.blog__cards .card__text {
+  padding: 25px 30px;
+  display: grid;
+  row-gap: 5px;
+}
+.blog__cards .card__text h3 {
+  font-size: 22px;
+}
+@media (min-width: 450px) {
+  .blog__cards .card__text h3 {
+    font-size: 26px;
+  }
+}
+.blog__cards .card__info {
+  color: #8F9394;
+}
+.blog__cards .card__desc span {
+  display: none;
+}
+@media (min-width: 450px) {
+  .blog__cards .card__desc span {
+    display: inline;
+  }
+}
+.blog__load-more {
+  margin-top: 10px;
+  justify-self: center;
+}
+.blog-show .container {
+  justify-items: center;
+  padding: 0 30px;
+}
+.blog-show__content {
+  background: #FAFCFC;
+  max-width: 900px;
+  margin: 10vh 0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  display: grid;
+  row-gap: 20px;
+}
+@media (min-width: 600px) {
+  .blog-show__content {
+    padding: 50px;
+  }
+}
+.blog-show__content h1 {
+  color: #219EBC;
+  font-size: 32px;
+}
+@media (min-width: 600px) {
+  .blog-show__content h1 {
+    font-size: 40px;
+  }
+}
+.blog-show__content img {
+  max-width: 100%;
+  justify-self: center;
+  border-radius: 8px;
+}
+.blog-show__info {
+  margin-bottom: 10px;
+  color: #8F9394;
+}
+.blog-show__paragraphs {
+  padding: 20px 0;
+  line-height: 1.5;
+  display: grid;
+  row-gap: 20px;
+}
+@media (min-width: 600px) {
+  .blog-show__paragraphs {
+    padding: 20px 30px;
+  }
+}
+.blog-show__paragraphs h2 {
+  color: #219EBC;
 }
 
 /*# sourceMappingURL=main.css.map */

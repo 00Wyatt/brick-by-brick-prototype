@@ -61,6 +61,7 @@
 
     & input {
         @extend .search-bar;
+        background: $primary-white-2;
         min-width: 280px;
         padding: 0 20px;
         border-radius: $rounded 0 0 $rounded;
@@ -125,4 +126,12 @@
     p a {
         @extend .link-underline;
     }
+}
+.filter {
+    background: $primary-white-2;
+    padding: 5px 18px;
+    border: 1px solid $primary-grey;
+    border-radius: $rounded;
+    box-shadow: $shadow-sml;
+    cursor: pointer;
 }

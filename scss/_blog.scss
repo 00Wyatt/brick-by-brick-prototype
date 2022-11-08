@@ -1,0 +1,112 @@
+.blog {
+    .container {
+        justify-items: center;
+        padding: 0 30px;
+    }
+
+    &__content {
+        display: grid;
+        margin: 10vh 0;
+
+        h1 {
+            color: $secondary-1;
+            margin-bottom: 20px;
+            font-size: 36px;
+
+            @include breakpoint(xsmall) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    &__search-bar {
+        @extend .search-bar;
+        display: none;
+        justify-self: start;
+        margin-bottom: 25px;
+        border-radius: $rounded;
+        box-shadow: $shadow-sml;
+
+        @include breakpoint(xsmall) {
+            display: block;
+        }
+    }
+
+    &__filters {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        a {
+            @extend .link-underline;
+        }
+    }
+
+    &__sort {
+        @extend .filter;
+
+        span {
+            color: $primary-grey;
+        }
+    }
+
+    &__cards {
+        max-width: 1200px;
+        display: grid;
+        row-gap: 25px;
+
+        .card {
+            display: flex;
+
+            &__img {
+                display: none;
+                max-width: 25%;
+
+                @include breakpoint(large) {
+                    display: grid;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__text {
+                padding: 25px 30px;
+                display: grid;
+                row-gap: 5px;
+
+                h3 {
+                    font-size: 22px;
+
+                    @include breakpoint(xsmall) {
+                        font-size: 26px;
+                    }
+                }
+            }
+
+            &__info {
+                color: $primary-grey;
+            }
+
+            &__desc span {
+                display: none;
+
+                @include breakpoint(xsmall) {
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    &__load-more {
+        margin-top: 10px;
+        justify-self: center;
+
+        a {
+            @extend .link-underline;
+        }
+    }
+}

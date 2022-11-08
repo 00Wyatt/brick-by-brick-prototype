@@ -16,7 +16,11 @@
         h1 {
             color: $secondary-1;
             margin-bottom: 20px;
-            font-size: 40px;
+            font-size: 36px;
+
+            @include breakpoint(xsmall) {
+                font-size: 40px;
+            }
         }
 
         p {
@@ -34,6 +38,7 @@
         }
 
         input, textarea {
+            background: $primary-white-2;
             width: 100%;
             margin-bottom: 20px;
             padding: 5px;
@@ -50,6 +55,7 @@
         button {
             justify-self: start;
             padding: 3px 10px;
+            box-shadow: $shadow-sml;
         }
     }
 }
