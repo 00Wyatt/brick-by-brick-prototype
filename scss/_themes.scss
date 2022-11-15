@@ -41,6 +41,7 @@
         }
 
         .card {
+            max-width: 850px;
             display: flex;
 
             @include breakpoint(large) {
@@ -68,12 +69,11 @@
                 }
 
                 img {
-                    width: 100%;
                     border-radius: $rounded;
                     overflow: hidden;
 
                     @include breakpoint(medium) {
-                        border-radius: 0px;
+                        border-radius: 0;
                     }
                 }
             }

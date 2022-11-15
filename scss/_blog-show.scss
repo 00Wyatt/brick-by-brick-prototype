@@ -7,7 +7,7 @@
     &__content {
         background: $primary-white-2;
         max-width: 900px;
-        margin: 10vh 0;
+        margin: 5vh 0;
         padding: 30px;
         border-radius: $rounded;
         box-shadow: $shadow-sml;
@@ -19,6 +19,7 @@
         }
 
         h1 {
+            margin: 12px 0;
             color: $secondary-1;
             font-size: 32px;
 
@@ -35,6 +36,9 @@
     }
 
     &__back {
+        padding-bottom: 12px;
+        border-bottom: 1px solid $primary-grey;
+
         a {
             @extend .link-underline;
         }
@@ -61,6 +65,10 @@
 
         h2 {
             color: $secondary-1;
+        }
+
+        img {
+            margin: 10px 0;
         }
     }
 }

@@ -66,12 +66,14 @@ header {
             }
 
             li {
+                transition: background-color $transition;
+
                 &:hover {
                     background: $secondary-1b;
 
-                    .nav-two__current::after {
-                        display: none;
-                    }
+                    // .nav-two__current::after {
+                    //     height: 0;
+                    // }
                 }
 
                 a {
@@ -86,15 +88,19 @@ header {
 
         &__current::after {
             content: "";
-            position: absolute;
-            height: 5px;
-            width: calc(100% - 24px);
-            bottom: 0;
             background: $primary-white-2;
+            position: absolute;
+            height: 3px;
+            // width: calc(100% - 24px);
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            // transition: $transition;
         }
 
         &__dropdown:hover &__drop-content {
             display: block;
+            // height: fit-content;
         }
 
         &__dropdown:hover &__current::after {
@@ -111,16 +117,19 @@ header {
 
         &__drop-content {
             display: none;
+            // height: 0;
+            // transition: 600ms;
             position: absolute;
             background-color: $secondary-1b;
             min-width: 130px;
             border-radius: 0 0 $rounded $rounded;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: $shadow-med;
             z-index: 1;
             overflow: hidden;
 
             a {
                 padding: 12px 16px;
+                transition: background-color $transition;
 
                 &:hover {
                     background-color: $secondary-0;

@@ -6,18 +6,27 @@
     }
 
     &__nav {
-        min-height: 220px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: center;
+        padding: 20px 0;
         font-size: 18px;
         font-weight: 500;
+
+        div:nth-child(3) {
+            display: none;
+        }
+
+        @include breakpoint(large) {
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+
+            div:nth-child(3) {
+                display: block;
+            }
+        }
     }
 
     &__logo {
         @extend .logo;
-        justify-self: start;
     }
 
     li a {
@@ -26,19 +35,29 @@
     }
 
     &__menu {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-auto-flow: column;
-        text-align: center;
-        gap: 15px;
         padding: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+        text-align: center;
+        
+        @include breakpoint(medium) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        @include breakpoint(large) {
+            grid-template-columns: none;
+            grid-template-rows: repeat(3, 1fr);
+            grid-auto-flow: column;
+            gap: 15px;
+        }
     }
 
     &__follow {
         margin-bottom: 12px;
         color: $primary-white-2;
-        text-align: end;
         line-height: 0.9;
+        text-align: end;
 
         &::after {
             content: "";
@@ -56,29 +75,33 @@
     }
 
     &__info {
-        height: 100%;
-        grid-column: span 3;
+        padding: 10px 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
+        gap: 10px;
+        text-align: center;
         border-top: 1px solid $primary-grey;
+
+        @include breakpoint(medium) {
+            padding: 20px 0 0;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @include breakpoint(large) {
+            grid-column: span 3;
+
+            p:nth-child(1) {
+                text-align: start;
+            }
+
+            p:nth-child(3) {
+                text-align: end;
+            }
+        }
 
         p {
             color: $primary-white-0;
             font-size: 14px;
             line-height: 1.5;
-        }
-
-        div:nth-child(1) {
-            display: flex;
-            justify-content: start;
-        }
-        p:nth-child(2) {
-            text-align: center;
-        }
-
-        p:nth-child(3) {
-            text-align: end;
         }
     }
 }

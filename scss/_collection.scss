@@ -5,29 +5,59 @@
     }
 
     &__content {
-        max-width: 1200px;
+        max-width: 1150px;
         margin: 10vh 0;
         display: grid;
-        gap: 18px;
+        gap: 10px;
+
+        @include breakpoint(small) {
+            gap: 18px;
+        }
 
         h1 {
             color: $secondary-1;
-            font-size: 40px;
+            font-size: 32px;
+
+            @include breakpoint(small) {
+                font-size: 40px;
+            }
         }
 
         > p {
-            margin-bottom: 10px;
             line-height: 1.4;
+
+            @include breakpoint(small) {
+                margin-bottom: 10px;
+            }
         }
     }
 
     &__filters {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 12px;
+
+        @include breakpoint(xsmall) {
+            align-items: stretch;
+        }
+
+        @include breakpoint(medium) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
         > div {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 10px;
+
+            @include breakpoint(xsmall) {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
 
             input {
                 margin: 0 0 0 10px;
@@ -42,24 +72,32 @@
 
     &__theme {
         @extend .filter;
-        margin-right: 10px
+        margin-right: 10px;
     }
 
     &__layout {
-        @extend .filter;
-        font-size: 25px;
-        padding: 0 3px;
-        margin-right: 5px;
+        display: flex;
 
-        &--fade {
-            @extend .collection__layout;
-            color: $primary-grey
+        .layout-btn {
+            @extend .filter;
+            font-size: 25px;
+            padding: 0 3px;
+            margin-right: 5px;
+
+            &--fade {
+                @extend .layout-btn;
+                color: $primary-grey;
+            }
         }
     }
 
     &__sort {
         @extend .filter;
-        margin-left: 10px;
+        align-self: center;
+
+        @include breakpoint(xsmall) {
+            margin-left: 10px;
+        }
 
         span {
             color: $primary-grey;
@@ -68,7 +106,16 @@
 
     &__pagination {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        row-gap: 10px;
+
+        @include breakpoint(small) {
+            grid-template-columns: 1fr 0.75fr;
+        }
+
+        @include breakpoint(medium) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
         > div {
             display: flex;
@@ -96,9 +143,28 @@
             font-weight: 600;
         }
 
+        &--top {
+            @extend .collection__pages;
+
+            @include breakpoint(small) {
+                justify-self: end;
+            }
+
+            @include breakpoint(medium) {
+                justify-self: center;
+            }
+        }
+
         &--bottom {
             @extend .collection__pages;
-            grid-column: span 3;
+
+            @include breakpoint(small) {
+                grid-column: span 2;
+            }
+
+            @include breakpoint(medium) {
+                grid-column: span 3;
+            }
         }
     }
 
@@ -110,25 +176,24 @@
 
     &__cards {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 50px;
+        gap: 30px;
+
+        @include breakpoint(small) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include breakpoint(medium) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px;
+        }
 
         .card {
-            max-width: 350px;
-            color: $primary-text;
-
-            &__img {
-                width: 350px;
-                height: 200px;
-
-                img {
-                    width: 100%;
-                }
-            }
+            display: grid;
+            align-items: baseline;
 
             &__text {
                 display: grid;
-                padding: 25px 35px 30px;
+                padding: 25px 30px;
                 line-height: 1.5;
 
                 h3 a {
@@ -141,7 +206,12 @@
             }
 
             &__view {
-                justify-self: center;
+                @extend .btn-filled;
+                text-align: center;
+
+                &:active {
+                    color: $accent-0;
+                }
             }
         }
     }

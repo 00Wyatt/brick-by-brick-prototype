@@ -35,7 +35,15 @@
     &__filters {
         margin-bottom: 20px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+        @include breakpoint(xsmall) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__menu {
@@ -53,9 +61,9 @@
     }
 
     &__cards {
-        max-width: 1200px;
+        max-width: 1150px;
         display: grid;
-        row-gap: 25px;
+        row-gap: 30px;
 
         .card {
             display: flex;
@@ -65,11 +73,7 @@
                 max-width: 25%;
 
                 @include breakpoint(large) {
-                    display: grid;
-                }
-
-                img {
-                    width: 100%;
+                    display: flex;
                 }
             }
 
