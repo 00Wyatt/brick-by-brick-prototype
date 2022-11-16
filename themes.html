@@ -15,7 +15,8 @@
         <div class="nav-one">
             <div class="container">
                 <div class="nav-one__nav">
-                    <a class="nav-one__logo" href="./index.html"><img src="./assets/images/b-b-logo.svg" alt="Brick-by-Brick Logo"></a>
+                    <a class="nav-one__logo" href="./index.html"><img src="./assets/images/b-b-logo.svg"
+                            alt="Brick-by-Brick Logo"></a>
                     <div class="nav-one__menu">
                         <form action="#" class="nav-one__search-bar">
                             <input type="text" placeholder="Search"><button type="submit"><i
@@ -24,6 +25,7 @@
                         <a class="btn-outline">Register</a>
                         <a class="btn-filled">Sign In</a>
                     </div>
+                    <a id="hamburger" class="nav-one__hamburger" href="#"><i class="bi bi-list"></i></a>
                 </div>
             </div>
         </div>
@@ -55,6 +57,33 @@
             </div>
         </div>
     </header>
+    <div id="sidenav" class="sidenav">
+        <div class="container">
+            <div class="sidenav__header">
+                <a id="closeButton" class="sidenav__close" href="#"><i class="bi bi-x-lg"></i></a>
+            </div>
+            <nav>
+                <ul class="sidenav__menu">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="./collection.html">Collection</a></li>
+                    <li><a href="./themes.html">Themes</a></li>
+                    <li><a href="./collection.html">MOCs</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+                <ul class="sidenav__socials">
+                    <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
     <main class="themes">
         <div class="container">
             <div class="themes__content">
@@ -67,20 +96,19 @@
                         </a>
                         <div class="card__text">
                             <h2><a href="./collection.html">Star Wars</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <p class="card__desc">One of our most beloved themes ever.</p>
+                            <p><a href="./collection.html">View sets</a></p>
                         </div>
                     </div>
                     <div class="card">
                         <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/lego-bucket-wheel-excavator.jpeg" alt="A LEGO Bucket Wheel Excavator">
+                            <img src="./assets/images/lego-bucket-wheel-excavator.jpeg"
+                                alt="A LEGO Bucket Wheel Excavator">
                         </a>
                         <div class="card__text">
                             <h2><a href="./collection.html">Technic</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <p class="card__desc">Vehicles and machines packed with realistic features and movement.</p>
+                            <p><a href="./collection.html">View sets</a></p>
                         </div>
                     </div>
                     <div class="card">
@@ -89,9 +117,8 @@
                         </a>
                         <div class="card__text">
                             <h2><a href="./collection.html">Icons</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <p class="card__desc">Premium, display-worthy LEGO sets.</p>
+                            <p><a href="./collection.html">View sets</a></p>
                         </div>
                     </div>
                     <div class="card">
@@ -100,42 +127,41 @@
                         </a>
                         <div class="card__text">
                             <h2><a href="./collection.html">City</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <p class="card__desc">In the best cities, you never know what’s around the corner.</p>
+                            <p><a href="./collection.html">View sets</a></p>
                         </div>
                     </div>
                     <div class="card">
                         <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/lego-frozen-characters.jpeg" alt="The main characters from Frozen as LEGO">
+                            <img src="./assets/images/lego-frozen-characters.jpeg"
+                                alt="The main characters from Frozen as LEGO">
                         </a>
                         <div class="card__text">
                             <h2><a href="./collection.html">BrickHeadz</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <p class="card__desc">Iconic characters, places and animals as unique collectibles.</p>
+                            <p><a href="./collection.html">View sets</a></p>
                         </div>
                     </div>
                     <div class="card">
                         <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/lego-winter-holiday-train.jpeg" alt="A LEGO green Winter Holiday Train">
+                            <img src="./assets/images/lego-winter-holiday-train.jpeg"
+                                alt="A LEGO green Winter Holiday Train">
                         </a>
                         <div class="card__text">
                             <h2><a href="./collection.html">Creator Expert</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <p class="card__desc">A full range of complex sets designed just for adults.</p>
+                            <p><a href="./collection.html">View sets</a></p>
                         </div>
                     </div>
                     <div class="card">
                         <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/lego-minifigures-lisa.jpg" alt="A LEGO Minifigures Lisa and Snowball">
+                            <img src="./assets/images/lego-minifigures-lisa.jpg"
+                                alt="A LEGO Minifigures Lisa and Snowball">
                         </a>
                         <div class="card__text">
                             <h2><a href="./collection.html">Minifigures</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <p class="card__desc">A range of minifigures from every walk of life.</p>
+                            <p><a href="./collection.html">View sets</a></p>
                         </div>
                     </div>
                     <div class="card">
@@ -144,9 +170,8 @@
                         </a>
                         <div class="card__text">
                             <h2><a href="./collection.html">Ghostbusters</a></h2>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p class="card__info">Nihb Integer Sed</p>
+                            <p class="card__desc">LEGO Ghostbusters sets based on scenes from the hit film series.</p>
+                            <p><a href="./collection.html">View sets</a></p>
                         </div>
                     </div>
                     <p class="themes__load-more"><a href="#">Load More <i class="bi bi-chevron-down"></i></a></p>
@@ -157,7 +182,8 @@
     <footer class="footer">
         <div class="container">
             <nav class="footer__nav">
-                <a class="footer__logo" href="./index.html"><img src="./assets/images/b-b-logo.svg" alt="Brick-by-Brick Logo"></a>
+                <a class="footer__logo" href="./index.html"><img src="./assets/images/b-b-logo.svg"
+                        alt="Brick-by-Brick Logo"></a>
                 <ul class="footer__menu">
                     <li><a href="./collection.html">Collection</a></li>
                     <li><a href="./themes.html">Themes</a></li>
@@ -184,6 +210,8 @@
             </nav>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 
 </body>
 
