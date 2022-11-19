@@ -3,10 +3,10 @@
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: $primary-white-2;
+    background: $white-1;
 }
 ::-webkit-scrollbar-thumb {
-    background: $primary-grey;
+    background: $light-grey;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #444;
@@ -16,7 +16,7 @@
     margin: 0 auto;
 }
 .logo {
-    background: $secondary-0;
+    background: $secondary;
     border-radius: $rounded;
 
     img {
@@ -26,11 +26,11 @@
 }
 .btn {
     min-width: fit-content;
-    color: $primary-white-2;
-    border: 3px solid $accent-0;
+    color: $white-1;
+    border: 3px solid $accent;
     border-radius: $rounded;
     padding: 8px 10px;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     font-weight: 500;
     box-shadow: $shadow-sml;
     transition: background-color $transition, opacity $transition;
@@ -42,7 +42,7 @@
 
     &-filled {
         @extend .btn;
-        background: $accent-0;
+        background: $accent;
 
         &:active {
             opacity: 1;
@@ -56,7 +56,7 @@
 
         &:active {
             opacity: 1;
-            background: $accent-0;
+            background: $accent;
         }
     }
 }
@@ -67,7 +67,7 @@
 
     & input {
         @extend .search-bar;
-        background: $primary-white-2;
+        background: $white-1;
         min-width: 280px;
         padding: 0 20px;
         border-radius: $rounded 0 0 $rounded;
@@ -76,10 +76,10 @@
 
     & button {
         @extend .search-bar;
-        background: $secondary-1;
-        color: $primary-white-2;
+        background: $primary;
+        color: $white-1;
         width: 60px;
-        font-size: 20px;
+        font-size: 1.25rem; /* 20px */
         border-radius: 0 $rounded $rounded 0;
         transition: opacity $transition;
         cursor: pointer;
@@ -105,7 +105,7 @@
     }
 }
 .link-underline {
-    color: $accent-0;
+    color: $accent;
     font-weight: 600;
 
     &:hover {
@@ -113,7 +113,7 @@
     }
 }
 .card {
-    background: $primary-white-2;
+    background: $white-1;
     border-radius: $rounded;
     box-shadow: $shadow-sml;
     overflow: hidden;
@@ -137,7 +137,7 @@
     h2 a,
     h3 a {
         @extend .link-dim;
-        color: $secondary-1;
+        color: $primary;
     }
 
     p a {
@@ -145,9 +145,9 @@
     }
 }
 .filter {
-    background: $primary-white-2;
+    background: $white-1;
     padding: 5px 18px;
-    border: 1px solid $primary-grey;
+    border: 1px solid $light-grey;
     border-radius: $rounded;
     box-shadow: $shadow-sml;
     cursor: pointer;

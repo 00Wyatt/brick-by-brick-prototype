@@ -1,6 +1,6 @@
 .sidenav {
-    background: $secondary-1;
-    color: $primary-white-2;
+    background: $primary;
+    color: $white-1;
     height: 100%;
     width: 0;
     position: fixed;
@@ -9,11 +9,11 @@
     right: 0;
     overflow-x: hidden;
     transition: 0.5s;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
 
     a {
         @extend .link-dim;
-        color: $primary-white-2;
+        color: $white-1;
     }
 
     .container {
@@ -28,8 +28,8 @@
     }
 
     &__close {
-        color: $primary-white-2;
-        font-size: 28px;
+        color: $white-1;
+        font-size: 1.75rem; /* 28px */
     }
 
     &__menu {

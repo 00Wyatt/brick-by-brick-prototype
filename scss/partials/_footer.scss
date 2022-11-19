@@ -1,5 +1,5 @@
 .footer {
-    background: $secondary-0;
+    background: $secondary;
 
     .container {
         padding: 0 5%;
@@ -8,7 +8,7 @@
     &__nav {
         display: grid;
         padding: 20px 0;
-        font-size: 18px;
+        font-size: 1.125rem; /* 18px */
         font-weight: 500;
 
         div:nth-child(3) {
@@ -31,11 +31,11 @@
 
     li a {
         @extend .link-dim;
-        color: $primary-white-2;
+        color: $white-1;
     }
 
     &__menu {
-        padding: 20px 0;
+        padding: 20px 0 30px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 10px;
@@ -55,7 +55,7 @@
 
     &__follow {
         margin-bottom: 12px;
-        color: $primary-white-2;
+        color: $white-1;
         line-height: 0.9;
         text-align: end;
 
@@ -64,7 +64,7 @@
             height: 1px;
             width: 135px;
             display: inline-block;
-            background: $primary-grey;
+            background: $light-grey;
         }
     }
 
@@ -79,7 +79,7 @@
         display: grid;
         gap: 10px;
         text-align: center;
-        border-top: 1px solid $primary-grey;
+        border-top: 1px solid $light-grey;
 
         @include breakpoint(medium) {
             padding: 20px 0 0;
@@ -99,8 +99,8 @@
         }
 
         p {
-            color: $primary-white-0;
-            font-size: 14px;
+            color: $white-3;
+            font-size: 0.875rem; /* 14px */
             line-height: 1.5;
         }
     }

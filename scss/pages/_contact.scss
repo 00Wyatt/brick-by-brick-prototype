@@ -6,7 +6,7 @@
     }
 
     &__content {
-        background: $primary-white-2;
+        background: $white-1;
         margin: 8vh 0;
         padding: 40px 35px;
         border-radius: $rounded;
@@ -14,12 +14,12 @@
         display: grid;
 
         h1 {
-            color: $secondary-1;
+            color: $primary;
             margin-bottom: 20px;
-            font-size: 36px;
+            font-size: 2.25rem; /* 36px */
 
             @include breakpoint(xsmall) {
-                font-size: 40px;
+                font-size: 2.5rem; /* 40px */
             }
         }
 
@@ -38,13 +38,13 @@
         }
 
         input, textarea {
-            background: $primary-white-2;
+            background: $white-1;
             width: 100%;
             margin-bottom: 20px;
             padding: 5px;
-            border: 1px solid $primary-grey;
+            border: 1px solid $light-grey;
             border-radius: $rounded;
-            font-size: 16px;
+            font-size: 1rem; /* 16px */
             box-shadow: $shadow-sml;
         }
 
