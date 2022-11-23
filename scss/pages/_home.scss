@@ -1,8 +1,12 @@
 .home {
     section {
-        min-height: 740px;
+        min-height: 600px;
         display: grid;
         align-items: center;
+
+        @include breakpoint(small) {
+            min-height: 740px;
+        }
 
         h2 {
             font-size: 1.75rem; /* 28px */
@@ -25,13 +29,17 @@
         color: $white-1;
 
         &__image {
-            min-height: 740px;
+            min-height: 600px;
             position: relative;
             background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url("../assets/images/hero-bg.jpg");
             background-size: cover;
             background-position: center;
             box-shadow: inset 0px 0px 60px 10px rgb(0, 0, 0, 0.3);
+
+            @include breakpoint(small) {
+                min-height: 740px;
+            }
 
             &::after {
                 content: "";
@@ -220,7 +228,11 @@
 
     .themes-preview {
         background: $white-2;
-        padding: 30px;
+        padding: 30px 20px;
+
+        @include breakpoint(small) {
+            padding: 30px;
+        }
 
         h2 {
             margin-bottom: 25px;
@@ -302,7 +314,11 @@
 
     .blog-preview {
         background: $primary;
-        padding: 30px;
+        padding: 30px 20px;
+
+        @include breakpoint(small) {
+            padding: 30px;
+        }
 
         h2 a {
             color: $white-1;
@@ -353,7 +369,15 @@
 
             .card {
                 max-width: 600px;
-                padding: 30px 45px;
+                padding: 30px 20px;
+
+                @include breakpoint(xsmall) {
+                    padding: 30px 30px;
+                }
+
+                @include breakpoint(small) {
+                    padding: 30px 45px;
+                }
 
                 h3 {
                     font-size: 1.75rem; /* 28px */
