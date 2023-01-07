@@ -2,260 +2,255 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="./dist/main.css">
-    <title>Collection - Brick-by-Brick</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./dist/main.css">
+  <title>Collection - Brick-by-Brick</title>
 </head>
 
 <body>
-    <header>
-        <div class="nav-one">
-            <div class="container">
-                <div class="nav-one__nav">
-                    <a class="nav-one__logo" href="./"><img src="./assets/bb-logo.svg"
-                            alt="Brick-by-Brick Logo"></a>
-                    <div class="nav-one__menu">
-                        <form action="#" class="nav-one__search-bar">
-                            <input type="text" placeholder="Search"><button type="submit"><i
-                                    class="bi bi-search"></i></button>
-                        </form>
-                        <a class="btn-outline">Register</a>
-                        <a class="btn-filled">Sign In</a>
-                    </div>
-                    <a id="hamburger" class="nav-one__hamburger" href="#"><i class="bi bi-list"></i></a>
-                </div>
-            </div>
+  <header>
+    <div class="nav-one">
+      <div class="container">
+        <div class="nav-one__nav">
+          <a class="nav-one__logo" href="./"><img src="./assets/bb-logo.svg" alt="Brick-by-Brick Logo"></a>
+          <div class="nav-one__menu">
+            <form action="#" class="nav-one__search-bar">
+              <input type="text" placeholder="Search"><button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <a class="btn-outline">Register</a>
+            <a class="btn-filled">Sign In</a>
+          </div>
+          <a id="hamburger" class="nav-one__hamburger" href="#"><i class="bi bi-list"></i></a>
         </div>
-        <div class="nav-two">
-            <div class="container">
-                <nav>
-                    <ul class="nav-two__menu">
-                        <li><a href="./">Home</a></li>
-                        <li class="nav-two__dropdown">
-                            <a class="nav-two__drop-btn nav-two__current" href="./collection.html" aria-current="page">Collection <i
-                                    class="bi bi-caret-down-fill"></i></a>
-                            <div class="nav-two__drop-content">
-                                <a href="./themes.html">Themes</a>
-                                <a href="./collection.html">MOCs</a>
-                            </div>
-                        </li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                    </ul>
-                    <ul class="nav-two__socials">
-                        <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-                        </li>
-                        <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div id="sidenav" class="sidenav">
-        <div class="container">
-            <div class="sidenav__header">
-                <a id="closeButton" class="sidenav__close" href="#"><i class="bi bi-x-lg"></i></a>
-            </div>
-            <nav>
-                <ul class="sidenav__menu">
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="./">Home</a></li>
-                    <li><a href="./collection.html" aria-current="page">Collection</a></li>
-                    <li><a href="./themes.html">Themes</a></li>
-                    <li><a href="./collection.html">MOCs</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                </ul>
-                <ul class="sidenav__socials">
-                    <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-                    </li>
-                    <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
-                </ul>
-            </nav>
-        </div>
+      </div>
     </div>
-    <div id="overlay" class="overlay"></div>
-    <main class="collection">
-        <div class="container">
-            <div class="collection__content">
-                <h1>Adrian Gould’s Collection</h1>
-                <p>Browse the collection to view pictures and find out more about each of Adrian's LEGO sets.</p>
-                <div class="collection__filters">
-                    <div>
-                        <p class="collection__theme">
-                            Select Theme <i class="bi bi-chevron-down"></i>
-                        </p>
-                        <div>
-                            <input type="radio" name="filter" id="all" checked>
-                            <label for="all">All</label>
-                            <input type="radio" name="filter" id="sets">
-                            <label for="sets">Sets</label>
-                            <input type="radio" name="filter" id="mocs">
-                            <label for="mocs">MOCs</label>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="collection__layout">
-                            <div class="layout-btn">
-                                <i class="bi bi-grid-3x2"></i>
-                            </div>
-                            <div class="layout-btn--fade">
-                                <i class="bi bi-card-list"></i>
-                            </div>
-                        </div>
-                        <p class="collection__sort">
-                            <span>Sort by:</span> Latest <i class="bi bi-chevron-down"></i>
-                        </p>
-                    </div>
-                </div>
-                <div class="collection__pagination">
-                    <div>
-                        <p class="collection__num-pages">20 <i class="bi bi-chevron-down"></i></p>
-                        <p>Showing 1 to 20 out of 232</p>
-                    </div>
-                    <ul class="collection__pages--top">
-                        <li><i class="bi bi-chevron-left"></i>Prev</li>
-                        <li><a class="current" href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">Next<i class="bi bi-chevron-right"></i></a></li>
-                    </ul>
-                </div>
-                <div class="collection__cards">
-                    <div class="card">
-                        <a class="card__img" href="./set-show.html">
-                            <img src="./assets/images/lego-defender-1.jpeg"
-                                alt="LEGO Land Rover Defender on the pavement next to grass">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./set-show.html">Land Rover Defender</a></h2>
-                            <p><a href="./themes.html">Technic</a></p>
-                            <p class="card__desc">Authentically detailed, multifunctional LEGO Technic interpretation
-                                of the 2019 Land Rover Defender.</p>
-                            <a class="card__view" href="./set-show.html">View Set</i></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./set-show.html">
-                            <img src="./assets/images/lego-jabbas-palace.jpeg"
-                                alt="A LEGO Jabba's Palace from Star Wars">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./set-show.html">Jabba's Palace</a></h2>
-                            <p><a href="./themes.html">Star Wars</a></p>
-                            <p class="card__desc">Features sliding throne with trap door and hidden treasure,
-                                entrance gate with movable guns.</p>
-                            <a class="card__view" href="./set-show.html">View Set</i></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./set-show.html">
-                            <img src="./assets/images/lego-succulents.jpg"
-                                alt="A group of LEGO Succulents with a dark background">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./set-show.html">Succulents</a></h2>
-                            <p><a href="./themes.html">Icons</a></p>
-                            <p class="card__desc">This set is part of a collection of LEGO building sets inspired by
-                                real-life plants and flowers.</p>
-                            <a class="card__view" href="./set-show.html">View Set</i></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./set-show.html">
-                            <img src="./assets/images/lego-easter-sheep.jpg" alt="BrickHeadz LEGO Easter Sheep">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./set-show.html">Easter Sheep</a></h2>
-                            <p><a href="./themes.html">BrickHeadz</a></p>
-                            <p class="card__desc">This is a collectible LEGO BrickHeadz buildable model of a cute
-                                sheep painting Easter eggs.</p>
-                            <a class="card__view" href="./set-show.html">View Set</i></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./set-show.html">
-                            <img src="./assets/images/lego-cargo-plane.jpeg" alt="A blue and white LEGO Cargo Plane">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./set-show.html">Cargo Plane</a></h2>
-                            <p><a href="./themes.html">Technic</a></p>
-                            <p class="card__desc">The Lego Technic Cargo Plane is a really fun and challenging build. A
-                                great model for display or play.
-                            </p>
-                            <a class="card__view" href="./set-show.html">View Set</i></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./set-show.html">
-                            <img src="./assets/images/lego-shuttle-expedition.jpg" alt="A white LEGO space shuttle">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./set-show.html">Shuttle Expedition</a></h2>
-                            <p><a href="./themes.html">Creator Expert</a></p>
-                            <p class="card__desc">Features realistic engines, retractable landing gear, and an opening
-                                cockpit with seats for 2 astronauts.</p>
-                            <a class="card__view" href="./set-show.html">View Set</i></a>
-                        </div>
-                    </div>
-                    <ul class="collection__pages--bottom">
-                        <li><i class="bi bi-chevron-left"></i>Prev</li>
-                        <li><a class="current" href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">Next<i class="bi bi-chevron-right"></i></a></li>
-                    </ul>
-                </div>
+    <div class="nav-two">
+      <div class="container">
+        <nav>
+          <ul class="nav-two__menu">
+            <li><a href="./">Home</a></li>
+            <li class="nav-two__dropdown">
+              <a class="nav-two__drop-btn nav-two__current" href="./collection.html" aria-current="page">Collection <i
+                  class="bi bi-caret-down-fill"></i></a>
+              <div class="nav-two__drop-content">
+                <a href="./themes.html">Themes</a>
+                <a href="./collection.html">MOCs</a>
+              </div>
+            </li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+          <ul class="nav-two__socials">
+            <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div id="sidenav" class="sidenav">
+    <div class="container">
+      <div class="sidenav__header">
+        <a id="closeButton" class="sidenav__close" href="#"><i class="bi bi-x-lg"></i></a>
+      </div>
+      <nav>
+        <ul class="sidenav__menu">
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./collection.html" aria-current="page">Collection</a></li>
+          <li><a href="./themes.html">Themes</a></li>
+          <li><a href="./collection.html">MOCs</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+        <ul class="sidenav__socials">
+          <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div id="overlay" class="overlay"></div>
+  <main class="collection">
+    <div class="container">
+      <div class="collection__content">
+        <h1>Adrian Gould’s Collection</h1>
+        <p>Browse the collection to view pictures and find out more about each of Adrian's LEGO sets.</p>
+        <div class="collection__filters">
+          <div>
+            <p class="collection__theme">
+              Select Theme <i class="bi bi-chevron-down"></i>
+            </p>
+            <div>
+              <input type="radio" name="filter" id="all" checked>
+              <label for="all">All</label>
+              <input type="radio" name="filter" id="sets">
+              <label for="sets">Sets</label>
+              <input type="radio" name="filter" id="mocs">
+              <label for="mocs">MOCs</label>
             </div>
+          </div>
+          <div>
+            <div class="collection__layout">
+              <div class="layout-btn">
+                <i class="bi bi-grid-3x2"></i>
+              </div>
+              <div class="layout-btn--fade">
+                <i class="bi bi-card-list"></i>
+              </div>
+            </div>
+            <p class="collection__sort">
+              <span>Sort by:</span> Latest <i class="bi bi-chevron-down"></i>
+            </p>
+          </div>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <nav class="footer__nav">
-                <a class="footer__logo" href="./"><img src="./assets/bb-logo.svg"
-                        alt="Brick-by-Brick Logo"></a>
-                <ul class="footer__menu">
-                    <li><a href="./collection.html" aria-current="page">Collection</a></li>
-                    <li><a href="./themes.html">Themes</a></li>
-                    <li><a href="./collection.html">MOCs</a></li>
-                    <li><a href="./about.html" aria-current="page">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                </ul>
-                <div>
-                    <P class="footer__follow">Follow Me<br /></P>
-                    <ul class="footer__socials">
-                        <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-                        </li>
-                        <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer__info">
-                    <p>Terms of Use · Privacy Policy · Accessibility</p>
-                    <p>© Brick-by-Brick 2022</p>
-                    <p>Designed and developed by Wyatt Channings</p>
-                </div>
-            </nav>
+        <div class="collection__pagination">
+          <div>
+            <p class="collection__num-pages">20 <i class="bi bi-chevron-down"></i></p>
+            <p>Showing 1 to 20 out of 232</p>
+          </div>
+          <ul class="collection__pages--top">
+            <li><i class="bi bi-chevron-left"></i>Prev</li>
+            <li><a class="current" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">Next<i class="bi bi-chevron-right"></i></a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="collection__cards">
+          <div class="card">
+            <a class="card__img" href="./set-show.html">
+              <img src="./assets/images/lego-defender-1.jpeg"
+                alt="LEGO Land Rover Defender on the pavement next to grass">
+            </a>
+            <div class="card__text">
+              <h2><a href="./set-show.html">Land Rover Defender</a></h2>
+              <p><a href="./themes.html">Technic</a></p>
+              <p class="card__desc">Authentically detailed, multifunctional LEGO Technic interpretation
+                of the 2019 Land Rover Defender.</p>
+              <a class="card__view" href="./set-show.html">View Set</i></a>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./set-show.html">
+              <img src="./assets/images/lego-jabbas-palace.jpeg" alt="A LEGO Jabba's Palace from Star Wars">
+            </a>
+            <div class="card__text">
+              <h2><a href="./set-show.html">Jabba's Palace</a></h2>
+              <p><a href="./themes.html">Star Wars</a></p>
+              <p class="card__desc">Features sliding throne with trap door and hidden treasure,
+                entrance gate with movable guns.</p>
+              <a class="card__view" href="./set-show.html">View Set</i></a>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./set-show.html">
+              <img src="./assets/images/lego-succulents.jpg" alt="A group of LEGO Succulents with a dark background">
+            </a>
+            <div class="card__text">
+              <h2><a href="./set-show.html">Succulents</a></h2>
+              <p><a href="./themes.html">Icons</a></p>
+              <p class="card__desc">This set is part of a collection of LEGO building sets inspired by
+                real-life plants and flowers.</p>
+              <a class="card__view" href="./set-show.html">View Set</i></a>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./set-show.html">
+              <img src="./assets/images/lego-easter-sheep.jpg" alt="BrickHeadz LEGO Easter Sheep">
+            </a>
+            <div class="card__text">
+              <h2><a href="./set-show.html">Easter Sheep</a></h2>
+              <p><a href="./themes.html">BrickHeadz</a></p>
+              <p class="card__desc">This is a collectible LEGO BrickHeadz buildable model of a cute
+                sheep painting Easter eggs.</p>
+              <a class="card__view" href="./set-show.html">View Set</i></a>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./set-show.html">
+              <img src="./assets/images/lego-cargo-plane.jpeg" alt="A blue and white LEGO Cargo Plane">
+            </a>
+            <div class="card__text">
+              <h2><a href="./set-show.html">Cargo Plane</a></h2>
+              <p><a href="./themes.html">Technic</a></p>
+              <p class="card__desc">The Lego Technic Cargo Plane is a really fun and challenging build. A
+                great model for display or play.
+              </p>
+              <a class="card__view" href="./set-show.html">View Set</i></a>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./set-show.html">
+              <img src="./assets/images/lego-shuttle-expedition.jpg" alt="A white LEGO space shuttle">
+            </a>
+            <div class="card__text">
+              <h2><a href="./set-show.html">Shuttle Expedition</a></h2>
+              <p><a href="./themes.html">Creator Expert</a></p>
+              <p class="card__desc">Features realistic engines, retractable landing gear, and an opening
+                cockpit with seats for 2 astronauts.</p>
+              <a class="card__view" href="./set-show.html">View Set</i></a>
+            </div>
+          </div>
+          <ul class="collection__pages--bottom">
+            <li><i class="bi bi-chevron-left"></i>Prev</li>
+            <li><a class="current" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">Next<i class="bi bi-chevron-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__nav">
+        <a class="footer__logo" href="./"><img src="./assets/bb-logo.svg" alt="Brick-by-Brick Logo"></a>
+        <ul class="footer__menu">
+          <li><a href="./collection.html" aria-current="page">Collection</a></li>
+          <li><a href="./themes.html">Themes</a></li>
+          <li><a href="./collection.html">MOCs</a></li>
+          <li><a href="./about.html" aria-current="page">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+        <div>
+          <P class="footer__follow">Follow Me<br /></P>
+          <ul class="footer__socials">
+            <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__info">
+          <p>Terms of Use · Privacy Policy · Accessibility</p>
+          <p>© Brick-by-Brick 2023</p>
+          <p>Designed and developed by Wyatt Channings</p>
+        </div>
+      </nav>
+    </div>
+  </footer>
 
-    <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 

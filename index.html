@@ -2,361 +2,350 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="./dist/main.css">
-    <title>Home - Brick-by-Brick</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./dist/main.css">
+  <title>Home - Brick-by-Brick</title>
 </head>
 
 <body>
-    <header>
-        <div class="nav-one">
-            <div class="container">
-                <div class="nav-one__nav">
-                    <a class="nav-one__logo" href="#"><img src="./assets/bb-logo.svg"
-                            alt="Brick-by-Brick Logo"></a>
-                    <div class="nav-one__menu">
-                        <form action="#" class="nav-one__search-bar">
-                            <input type="text" placeholder="Search"><button type="submit"><i
-                                    class="bi bi-search"></i></button>
-                        </form>
-                        <a class="btn-outline">Register</a>
-                        <a class="btn-filled">Sign In</a>
-                    </div>
-                    <a id="hamburger" class="nav-one__hamburger" href="#"><i class="bi bi-list"></i></a>
-                </div>
-            </div>
+  <header>
+    <div class="nav-one">
+      <div class="container">
+        <div class="nav-one__nav">
+          <a class="nav-one__logo" href="#"><img src="./assets/bb-logo.svg" alt="Brick-by-Brick Logo"></a>
+          <div class="nav-one__menu">
+            <form action="#" class="nav-one__search-bar">
+              <input type="text" placeholder="Search"><button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <a class="btn-outline">Register</a>
+            <a class="btn-filled">Sign In</a>
+          </div>
+          <a id="hamburger" class="nav-one__hamburger" href="#"><i class="bi bi-list"></i></a>
         </div>
-        <div class="nav-two">
-            <div class="container">
-                <nav>
-                    <ul class="nav-two__menu">
-                        <li><a class="nav-two__current" href="./" aria-current="page">Home</a></li>
-                        <li class="nav-two__dropdown">
-                            <a class="nav-two__drop-btn" href="./collection.html">Collection <i
-                                    class="bi bi-caret-down-fill"></i></a>
-                            <div class="nav-two__drop-content">
-                                <a href="./themes.html">Themes</a>
-                                <a href="./collection.html">MOCs</a>
-                            </div>
-                        </li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                    </ul>
-                    <ul class="nav-two__socials">
-                        <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-                        </li>
-                        <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div id="sidenav" class="sidenav">
-        <div class="container">
-            <div class="sidenav__header">
-                <a id="closeButton" class="sidenav__close" href="#"><i class="bi bi-x-lg"></i></a>
-            </div>
-            <nav>
-                <ul class="sidenav__menu">
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="./" aria-current="page">Home</a></li>
-                    <li><a href="./collection.html">Collection</a></li>
-                    <li><a href="./themes.html">Themes</a></li>
-                    <li><a href="./collection.html">MOCs</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                </ul>
-                <ul class="sidenav__socials">
-                    <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-                    </li>
-                    <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
-                </ul>
-            </nav>
-        </div>
+      </div>
     </div>
-    <div id="overlay" class="overlay"></div>
-    <main class="home">
-        <section class="hero">
-            <div class="hero__image">
-                <img src="../assets/images/hero-bg.jpg" alt="">
-            </div>
-            <div class="hero__text">
-                <h1>Welcome to Brick-by-Brick</h1>
-                <p>The online catalogue of Adrian Gould’s LEGO collection</p>
-                <a class="btn-filled" href="./collection.html">View Collection</a>
-            </div>
-        </section>
-        <section class="featured-sets">
-            <div class="container">
-                <div class="featured-sets__carousel">
-                    <h2><a href="./collection.html">Featured Sets</a></h2>
-                    <ul class="featured-sets__cards">
-                        <li class="card">
-                            <a class="card__img" href="./set-show.html">
-                                <img src="./assets/images/lego-defender-1.jpeg"
-                                    alt="LEGO Land Rover Defender on the pavement next to grass">
-                            </a>
-                            <div class="card__text">
-                                <h3><a href="./set-show.html">Land Rover Defender</a></h3>
-                                <p><a href="./themes.html">Technic</a></p>
-                                <p class="card__desc">Authentically detailed, multifunctional LEGO Technic
-                                    interpretation
-                                    of the 2019 Land Rover Defender.</p>
-                                <a class="card__view" href="./set-show.html">View Set</a>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <a class="card__img" href="./set-show.html">
-                                <img src="./assets/images/lego-republic-gunship.jpeg"
-                                    alt="A LEGO Republic Gunship from Star Wars">
-                            </a>
-                            <div class="card__text">
-                                <h3><a href="./set-show.html">Republic Gunship</a></h3>
-                                <p><a href="./themes.html">Star Wars</a></p>
-                                <p class="card__desc">This set depicts the recognizable Republic Gunship, and
-                                    includes an incredible attention to detail.</p>
-                                <a class="card__view" href="./set-show.html">View Set</a>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <a class="card__img" href="./set-show.html">
-                                <img src="./assets/images/lego-orchid.jpg" alt="A LEGO orchid with a blue background">
-                            </a>
-                            <div class="card__text">
-                                <h3><a href="./set-show.html">Orchid</a></h3>
-                                <p><a href="./themes.html">Icons</a></p>
-                                <p class="card__desc">This set is part of a collection of LEGO building sets inspired by
-                                    real-life plants and flowers.</p>
-                                <a class="card__view" href="./set-show.html">View Set</a>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <a class="card__img" href="./set-show.html">
-                                <img src="./assets/images/lego-concrete-mixer-truck.jpg"
-                                    alt="A blue LEGO Concrete Mixer Truck">
-                            </a>
-                            <div class="card__text">
-                                <h3><a href="./set-show.html">Concrete Mixer Truck</a></h3>
-                                <p><a href="./themes.html">Technic</a></p>
-                                <p class="card__desc">LEGO Technic offers advanced building kits packed with realistic
-                                    features.</p>
-                                <a class="card__view" href="./set-show.html">View Set</a>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <a class="card__img" href="./set-show.html">
-                                <img src="./assets/images/lego-stormtrooper-helmet.jpg"
-                                    alt="LEGO Stormtrooper helmet with a red background">
-                            </a>
-                            <div class="card__text">
-                                <h3><a href="./set-show.html">Stormtrooper Helmet</a></h3>
-                                <p><a href="./themes.html">Star Wars</a></p>
-                                <p class="card__desc">Every Imperial detail is capured with the collectible LEGO Star
-                                    Wars Stormtrooper Helmet.</p>
-                                <a class="card__view" href="./set-show.html">View Set</a>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <a class="card__img" href="./set-show.html">
-                                <img src="./assets/images/lego-succulents.jpg"
-                                    alt="A group of LEGO Succulents with a dark background">
-                            </a>
-                            <div class="card__text">
-                                <h3><a href="./set-show.html">Succulents</a></h3>
-                                <p><a href="./themes.html">Icons</a></p>
-                                <p class="card__desc">This set is part of a collection of LEGO building sets inspired by
-                                    real-life plants and flowers.</p>
-                                <a class="card__view" href="./set-show.html">View Set</a>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <a class="card__img" href="./set-show.html">
-                                <img src="./assets/images/lego-jabbas-palace.jpeg"
-                                    alt="A LEGO Jabba's Palace from Star Wars">
-                            </a>
-                            <div class="card__text">
-                                <h3><a href="./set-show.html">Jabba's Palace</a></h3>
-                                <p><a href="./themes.html">Star Wars</a></p>
-                                <p class="card__desc">Features sliding throne with trap door and hidden treasure,
-                                    entrance gate with movable guns.</p>
-                                <a class="card__view" href="./set-show.html">View Set</a>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <a class="card__img" href="./set-show.html">
-                                <img src="./assets/images/lego-easter-sheep.jpg" alt="BrickHeadz LEGO Easter Sheep">
-                            </a>
-                            <div class="card__text">
-                                <h3><a href="./set-show.html">Easter Sheep</a></h3>
-                                <p><a href="./themes.html">BrickHeadz</a></p>
-                                <p class="card__desc">This is a collectible LEGO BrickHeadz buildable model of a cute
-                                    sheep painting Easter eggs.</p>
-                                <a class="card__view" href="./set-show.html">View Set</a>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <a class="card__img" href="./set-show.html">
-                                <img src="./assets/images/lego-offroad-chase.jpg"
-                                    alt="Offroad Chase LEGO set with motorbike and snake">
-                            </a>
-                            <div class="card__text">
-                                <h3><a href="./set-show.html">Off-Road Chase</a></h3>
-                                <p><a href="./themes.html">City</a></p>
-                                <p class="card__desc">Includes an awesome police bike and a sneaky
-                                    crook hideout with loot stash space.</p>
-                                <a class="card__view" href="./set-show.html">View Set</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="themes-preview">
-            <div class="container">
-                <h2><a href="./themes.html">Themes</a></h2>
-                <div class="themes-preview__cards">
-                    <div class="card">
-                        <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/lego-grogu.jpg" alt="LEGO Grogu with light background">
-                        </a>
-                        <div class="card__text">
-                            <h3><a href="./collection.html">Star Wars</a></h3>
-                            <p>One of LEGO's most beloved themes ever.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/lego-bucket-wheel-excavator.jpeg"
-                                alt="A LEGO Bucket Wheel Excavator">
-                        </a>
-                        <div class="card__text">
-                            <h3><a href="./collection.html">Technic</a></h3>
-                            <p>Vehicles and machines packed with realistic features and movement.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/lego-bonsai-tree.jpg" alt="A LEGO Bonsai Tree with pink flowers">
-                        </a>
-                        <div class="card__text">
-                            <h3><a href="./collection.html">Icons</a></h3>
-                            <p>Premium, display-worthy LEGO sets.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/lego-mining-team.jpeg" alt="A LEGO Mining Team character">
-                        </a>
-                        <div class="card__text">
-                            <h3><a href="./collection.html">City</a></h3>
-                            <p>In the best cities, you never know what’s around the corner.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/lego-frozen-characters.jpeg"
-                                alt="The main characters from Frozen as LEGO">
-                        </a>
-                        <div class="card__text">
-                            <h3><a href="./collection.html">BrickHeadz</a></h3>
-                            <p>Iconic characters, places and animals as unique collectibles.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./collection.html">
-                            <img src="./assets/images/lego-winter-holiday-train.jpeg"
-                                alt="A LEGO green Winter Holiday Train">
-                        </a>
-                        <div class="card__text">
-                            <h3><a href="./collection.html">Creator Expert</a></h3>
-                            <p>A full range of complex sets designed just for adults.</p>
-                        </div>
-                    </div>
-                    <p class="see-more"><a href="./themes.html">See More<i class="bi bi-chevron-right"></i></a></p>
-                </div>
-            </div>
-        </section>
-        <section class="blog-preview">
-            <div class="container">
-                <div class="blog-preview__header">
-                    <h2><a href="./blog.html">Blog Posts</a></h2>
-                    <p><a href="./blog.html">View all blog posts</a></p>
-                </div>
-                <div class="blog-preview__cards">
-                    <div class="card">
-                        <h3><a href="./blog-show.html">Lorem ipsum dolor sit amet, consectetur</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                            venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                            elementum facilisis leo, vel...</p>
-                        <p><a href="./blog-show.html">Read More</a></p>
-                    </div>
-                    <div class="card">
-                        <h3><a href="./blog-show.html">Lorem ipsum dolor sit amet, consectetur</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                            venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                            elementum facilisis leo, vel...</p>
-                        <p><a href="./blog-show.html">Read More</a></p>
-                    </div>
-                    <div class="card">
-                        <h3><a href="./blog-show.html">Lorem ipsum dolor sit amet, consectetur</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                            venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                            elementum facilisis leo, vel...</p>
-                        <p><a href="./blog-show.html">Read More</a></p>
-                    </div>
-                    <div class="card">
-                        <h3><a href="./blog-show.html">Lorem ipsum dolor sit amet, consectetur</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                            venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                            elementum facilisis leo, vel...</p>
-                        <p><a href="./blog-show.html">Read More</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <nav class="footer__nav">
-                <a class="footer__logo" href="./"><img src="./assets/bb-logo.svg" alt="Brick-by-Brick Logo"></a>
-                <ul class="footer__menu">
-                    <li><a href="./collection.html">Collection</a></li>
-                    <li><a href="./themes.html">Themes</a></li>
-                    <li><a href="./collection.html">MOCs</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                </ul>
-                <div>
-                    <P class="footer__follow">Follow Me<br /></P>
-                    <ul class="footer__socials">
-                        <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-                        </li>
-                        <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer__info">
-                    <p>Terms of Use · Privacy Policy · Accessibility</p>
-                    <p>© Brick-by-Brick 2022</p>
-                    <p>Designed and developed by Wyatt Channings</p>
-                </div>
-            </nav>
+    <div class="nav-two">
+      <div class="container">
+        <nav>
+          <ul class="nav-two__menu">
+            <li><a class="nav-two__current" href="./" aria-current="page">Home</a></li>
+            <li class="nav-two__dropdown">
+              <a class="nav-two__drop-btn" href="./collection.html">Collection <i class="bi bi-caret-down-fill"></i></a>
+              <div class="nav-two__drop-content">
+                <a href="./themes.html">Themes</a>
+                <a href="./collection.html">MOCs</a>
+              </div>
+            </li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+          <ul class="nav-two__socials">
+            <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div id="sidenav" class="sidenav">
+    <div class="container">
+      <div class="sidenav__header">
+        <a id="closeButton" class="sidenav__close" href="#"><i class="bi bi-x-lg"></i></a>
+      </div>
+      <nav>
+        <ul class="sidenav__menu">
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="./" aria-current="page">Home</a></li>
+          <li><a href="./collection.html">Collection</a></li>
+          <li><a href="./themes.html">Themes</a></li>
+          <li><a href="./collection.html">MOCs</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+        <ul class="sidenav__socials">
+          <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div id="overlay" class="overlay"></div>
+  <main class="home">
+    <section class="hero">
+      <div class="hero__image">
+        <img src="../assets/images/hero-bg.jpg" alt="">
+      </div>
+      <div class="hero__text">
+        <h1>Welcome to Brick-by-Brick</h1>
+        <p>The online catalogue of Adrian Gould’s LEGO collection</p>
+        <a class="btn-filled" href="./collection.html">View Collection</a>
+      </div>
+    </section>
+    <section class="featured-sets">
+      <div class="container">
+        <div class="featured-sets__carousel">
+          <h2><a href="./collection.html">Featured Sets</a></h2>
+          <ul class="featured-sets__cards">
+            <li class="card">
+              <a class="card__img" href="./set-show.html">
+                <img src="./assets/images/lego-defender-1.jpeg"
+                  alt="LEGO Land Rover Defender on the pavement next to grass">
+              </a>
+              <div class="card__text">
+                <h3><a href="./set-show.html">Land Rover Defender</a></h3>
+                <p><a href="./themes.html">Technic</a></p>
+                <p class="card__desc">Authentically detailed, multifunctional LEGO Technic
+                  interpretation
+                  of the 2019 Land Rover Defender.</p>
+                <a class="card__view" href="./set-show.html">View Set</a>
+              </div>
+            </li>
+            <li class="card">
+              <a class="card__img" href="./set-show.html">
+                <img src="./assets/images/lego-republic-gunship.jpeg" alt="A LEGO Republic Gunship from Star Wars">
+              </a>
+              <div class="card__text">
+                <h3><a href="./set-show.html">Republic Gunship</a></h3>
+                <p><a href="./themes.html">Star Wars</a></p>
+                <p class="card__desc">This set depicts the recognizable Republic Gunship, and
+                  includes an incredible attention to detail.</p>
+                <a class="card__view" href="./set-show.html">View Set</a>
+              </div>
+            </li>
+            <li class="card">
+              <a class="card__img" href="./set-show.html">
+                <img src="./assets/images/lego-orchid.jpg" alt="A LEGO orchid with a blue background">
+              </a>
+              <div class="card__text">
+                <h3><a href="./set-show.html">Orchid</a></h3>
+                <p><a href="./themes.html">Icons</a></p>
+                <p class="card__desc">This set is part of a collection of LEGO building sets inspired by
+                  real-life plants and flowers.</p>
+                <a class="card__view" href="./set-show.html">View Set</a>
+              </div>
+            </li>
+            <li class="card">
+              <a class="card__img" href="./set-show.html">
+                <img src="./assets/images/lego-concrete-mixer-truck.jpg" alt="A blue LEGO Concrete Mixer Truck">
+              </a>
+              <div class="card__text">
+                <h3><a href="./set-show.html">Concrete Mixer Truck</a></h3>
+                <p><a href="./themes.html">Technic</a></p>
+                <p class="card__desc">LEGO Technic offers advanced building kits packed with realistic
+                  features.</p>
+                <a class="card__view" href="./set-show.html">View Set</a>
+              </div>
+            </li>
+            <li class="card">
+              <a class="card__img" href="./set-show.html">
+                <img src="./assets/images/lego-stormtrooper-helmet.jpg"
+                  alt="LEGO Stormtrooper helmet with a red background">
+              </a>
+              <div class="card__text">
+                <h3><a href="./set-show.html">Stormtrooper Helmet</a></h3>
+                <p><a href="./themes.html">Star Wars</a></p>
+                <p class="card__desc">Every Imperial detail is capured with the collectible LEGO Star
+                  Wars Stormtrooper Helmet.</p>
+                <a class="card__view" href="./set-show.html">View Set</a>
+              </div>
+            </li>
+            <li class="card">
+              <a class="card__img" href="./set-show.html">
+                <img src="./assets/images/lego-succulents.jpg" alt="A group of LEGO Succulents with a dark background">
+              </a>
+              <div class="card__text">
+                <h3><a href="./set-show.html">Succulents</a></h3>
+                <p><a href="./themes.html">Icons</a></p>
+                <p class="card__desc">This set is part of a collection of LEGO building sets inspired by
+                  real-life plants and flowers.</p>
+                <a class="card__view" href="./set-show.html">View Set</a>
+              </div>
+            </li>
+            <li class="card">
+              <a class="card__img" href="./set-show.html">
+                <img src="./assets/images/lego-jabbas-palace.jpeg" alt="A LEGO Jabba's Palace from Star Wars">
+              </a>
+              <div class="card__text">
+                <h3><a href="./set-show.html">Jabba's Palace</a></h3>
+                <p><a href="./themes.html">Star Wars</a></p>
+                <p class="card__desc">Features sliding throne with trap door and hidden treasure,
+                  entrance gate with movable guns.</p>
+                <a class="card__view" href="./set-show.html">View Set</a>
+              </div>
+            </li>
+            <li class="card">
+              <a class="card__img" href="./set-show.html">
+                <img src="./assets/images/lego-easter-sheep.jpg" alt="BrickHeadz LEGO Easter Sheep">
+              </a>
+              <div class="card__text">
+                <h3><a href="./set-show.html">Easter Sheep</a></h3>
+                <p><a href="./themes.html">BrickHeadz</a></p>
+                <p class="card__desc">This is a collectible LEGO BrickHeadz buildable model of a cute
+                  sheep painting Easter eggs.</p>
+                <a class="card__view" href="./set-show.html">View Set</a>
+              </div>
+            </li>
+            <li class="card">
+              <a class="card__img" href="./set-show.html">
+                <img src="./assets/images/lego-offroad-chase.jpg" alt="Offroad Chase LEGO set with motorbike and snake">
+              </a>
+              <div class="card__text">
+                <h3><a href="./set-show.html">Off-Road Chase</a></h3>
+                <p><a href="./themes.html">City</a></p>
+                <p class="card__desc">Includes an awesome police bike and a sneaky
+                  crook hideout with loot stash space.</p>
+                <a class="card__view" href="./set-show.html">View Set</a>
+              </div>
+            </li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </section>
+    <section class="themes-preview">
+      <div class="container">
+        <h2><a href="./themes.html">Themes</a></h2>
+        <div class="themes-preview__cards">
+          <div class="card">
+            <a class="card__img" href="./collection.html">
+              <img src="./assets/images/lego-grogu.jpg" alt="LEGO Grogu with light background">
+            </a>
+            <div class="card__text">
+              <h3><a href="./collection.html">Star Wars</a></h3>
+              <p>One of LEGO's most beloved themes ever.</p>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./collection.html">
+              <img src="./assets/images/lego-bucket-wheel-excavator.jpeg" alt="A LEGO Bucket Wheel Excavator">
+            </a>
+            <div class="card__text">
+              <h3><a href="./collection.html">Technic</a></h3>
+              <p>Vehicles and machines packed with realistic features and movement.</p>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./collection.html">
+              <img src="./assets/images/lego-bonsai-tree.jpg" alt="A LEGO Bonsai Tree with pink flowers">
+            </a>
+            <div class="card__text">
+              <h3><a href="./collection.html">Icons</a></h3>
+              <p>Premium, display-worthy LEGO sets.</p>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./collection.html">
+              <img src="./assets/images/lego-mining-team.jpeg" alt="A LEGO Mining Team character">
+            </a>
+            <div class="card__text">
+              <h3><a href="./collection.html">City</a></h3>
+              <p>In the best cities, you never know what’s around the corner.</p>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./collection.html">
+              <img src="./assets/images/lego-frozen-characters.jpeg" alt="The main characters from Frozen as LEGO">
+            </a>
+            <div class="card__text">
+              <h3><a href="./collection.html">BrickHeadz</a></h3>
+              <p>Iconic characters, places and animals as unique collectibles.</p>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./collection.html">
+              <img src="./assets/images/lego-winter-holiday-train.jpeg" alt="A LEGO green Winter Holiday Train">
+            </a>
+            <div class="card__text">
+              <h3><a href="./collection.html">Creator Expert</a></h3>
+              <p>A full range of complex sets designed just for adults.</p>
+            </div>
+          </div>
+          <p class="see-more"><a href="./themes.html">See More<i class="bi bi-chevron-right"></i></a></p>
+        </div>
+      </div>
+    </section>
+    <section class="blog-preview">
+      <div class="container">
+        <div class="blog-preview__header">
+          <h2><a href="./blog.html">Blog Posts</a></h2>
+          <p><a href="./blog.html">View all blog posts</a></p>
+        </div>
+        <div class="blog-preview__cards">
+          <div class="card">
+            <h3><a href="./blog-show.html">Lorem ipsum dolor sit amet, consectetur</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+              venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
+              elementum facilisis leo, vel...</p>
+            <p><a href="./blog-show.html">Read More</a></p>
+          </div>
+          <div class="card">
+            <h3><a href="./blog-show.html">Lorem ipsum dolor sit amet, consectetur</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+              venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
+              elementum facilisis leo, vel...</p>
+            <p><a href="./blog-show.html">Read More</a></p>
+          </div>
+          <div class="card">
+            <h3><a href="./blog-show.html">Lorem ipsum dolor sit amet, consectetur</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+              venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
+              elementum facilisis leo, vel...</p>
+            <p><a href="./blog-show.html">Read More</a></p>
+          </div>
+          <div class="card">
+            <h3><a href="./blog-show.html">Lorem ipsum dolor sit amet, consectetur</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+              venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
+              elementum facilisis leo, vel...</p>
+            <p><a href="./blog-show.html">Read More</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__nav">
+        <a class="footer__logo" href="./"><img src="./assets/bb-logo.svg" alt="Brick-by-Brick Logo"></a>
+        <ul class="footer__menu">
+          <li><a href="./collection.html">Collection</a></li>
+          <li><a href="./themes.html">Themes</a></li>
+          <li><a href="./collection.html">MOCs</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+        <div>
+          <P class="footer__follow">Follow Me<br /></P>
+          <ul class="footer__socials">
+            <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__info">
+          <p>Terms of Use · Privacy Policy · Accessibility</p>
+          <p>© Brick-by-Brick 2023</p>
+          <p>Designed and developed by Wyatt Channings</p>
+        </div>
+      </nav>
+    </div>
+  </footer>
 
-    <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 

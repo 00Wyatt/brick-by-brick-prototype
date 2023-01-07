@@ -2,203 +2,196 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="./dist/main.css">
-    <title>Blog - Brick-by-Brick</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./dist/main.css">
+  <title>Blog - Brick-by-Brick</title>
 </head>
 
 <body>
-    <header>
-        <div class="nav-one">
-            <div class="container">
-                <div class="nav-one__nav">
-                    <a class="nav-one__logo" href="./"><img src="./assets/bb-logo.svg"
-                            alt="Brick-by-Brick Logo"></a>
-                    <div class="nav-one__menu">
-                        <form action="#" class="nav-one__search-bar">
-                            <input type="text" placeholder="Search"><button type="submit"><i
-                                    class="bi bi-search"></i></button>
-                        </form>
-                        <a class="btn-outline">Register</a>
-                        <a class="btn-filled">Sign In</a>
-                    </div>
-                    <a id="hamburger" class="nav-one__hamburger" href="#"><i class="bi bi-list"></i></a>
-                </div>
-            </div>
+  <header>
+    <div class="nav-one">
+      <div class="container">
+        <div class="nav-one__nav">
+          <a class="nav-one__logo" href="./"><img src="./assets/bb-logo.svg" alt="Brick-by-Brick Logo"></a>
+          <div class="nav-one__menu">
+            <form action="#" class="nav-one__search-bar">
+              <input type="text" placeholder="Search"><button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <a class="btn-outline">Register</a>
+            <a class="btn-filled">Sign In</a>
+          </div>
+          <a id="hamburger" class="nav-one__hamburger" href="#"><i class="bi bi-list"></i></a>
         </div>
-        <div class="nav-two">
-            <div class="container">
-                <nav>
-                    <ul class="nav-two__menu">
-                        <li><a href="./">Home</a></li>
-                        <li class="nav-two__dropdown">
-                            <a class="nav-two__drop-btn" href="./collection.html">Collection <i
-                                    class="bi bi-caret-down-fill"></i></a>
-                            <div class="nav-two__drop-content">
-                                <a href="./themes.html">Themes</a>
-                                <a href="./collection.html">MOCs</a>
-                            </div>
-                        </li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a class="nav-two__current" href="./blog.html" aria-current="page">Blog</a></li>
-                    </ul>
-                    <ul class="nav-two__socials">
-                        <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-                        </li>
-                        <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div id="sidenav" class="sidenav">
-        <div class="container">
-            <div class="sidenav__header">
-                <a id="closeButton" class="sidenav__close" href="#"><i class="bi bi-x-lg"></i></a>
-            </div>
-            <nav>
-                <ul class="sidenav__menu">
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="./">Home</a></li>
-                    <li><a href="./collection.html">Collection</a></li>
-                    <li><a href="./themes.html">Themes</a></li>
-                    <li><a href="./collection.html">MOCs</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./blog.html" aria-current="page">Blog</a></li>
-                </ul>
-                <ul class="sidenav__socials">
-                    <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-                    </li>
-                    <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
-                </ul>
-            </nav>
-        </div>
+      </div>
     </div>
-    <div id="overlay" class="overlay"></div>
-    <main class="blog">
-        <div class="container">
-            <div class="blog__content">
-                <h1>Blog</h1>
-                <form action="#" class="blog__search-bar">
-                    <input type="text" placeholder="Search"><button type="submit"><i class="bi bi-search"></i></button>
-                </form>
-                <div class="blog__filters">
-                    <div class="blog__menu">
-                        <a href="">Categories</a> ·
-                        <a href="">Archive</a>
-                    </div>
-                    <p class="blog__sort">
-                        <span>Sort by:</span> Latest <i class="bi bi-chevron-down"></i>
-                    </p>
-                </div>
-                <div class="blog__cards">
-                    <div class="card">
-                        <a class="card__img" href="./blog-show.html">
-                            <img src="./assets/images/lego-heart.jpg" alt="A heart shape made from LEGO">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./blog-show.html">Lorem Ipsum Dolor Sit</a></h2>
-                            <p class="card__info">7/11/2022 · Posted in <a href="#">Psychology</a></p>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
-                                mauris vitae, fringilla mi non condimentum non volutpat posuere<span>. Bibendum
-                                    pellentesque morbi ut sit est. Sodales mauris felis mauris ac quis enim elementum
-                                    massa sodales sagittis. Iaculis dignissim risus feugiat feugiat et ut</span>...
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./blog-show.html">
-                            <img src="./assets/images/lego-colored-blocks.jpg" alt="Colored LEGO blocks in a pile">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./blog-show.html">Lorem Ipsum Dolor Sit</a></h2>
-                            <p class="card__info">3/11/2022 · Posted in <a href="#">Lifestyle</a></p>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
-                                mauris vitae, fringilla mi non condimentum non volutpat posuere<span>. Bibendum
-                                    pellentesque morbi ut sit est. Sodales mauris felis mauris ac quis enim elementum
-                                    massa sodales sagittis. Iaculis dignissim risus feugiat feugiat et ut</span>...
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./blog-show.html">
-                            <img src="./assets/images/lego-stormstroopers-pair.jpg"
-                                alt="The backs of two LEGO Stormtroopers">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./blog-show.html">Lorem Ipsum Dolor Sit</a></h2>
-                            <p class="card__info">30/10/2022 · Posted in <a href="#">Education</a>, <a
-                                    href="#">Science</a></p>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
-                                mauris vitae, fringilla mi non condimentum non volutpat posuere<span>. Bibendum
-                                    pellentesque morbi ut sit est. Sodales mauris felis mauris ac quis enim elementum
-                                    massa sodales sagittis. Iaculis dignissim risus feugiat feugiat et ut</span>...
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a class="card__img" href="./blog-show.html">
-                            <img src="./assets/images/lego-face.jpg"
-                                alt="A black and white picture of LEGO person's face">
-                        </a>
-                        <div class="card__text">
-                            <h2><a href="./blog-show.html">Lorem Ipsum Dolor Sit</a></h2>
-                            <p class="card__info">26/10/2022 · Posted in <a href="#">Philosophy</a></p>
-                            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
-                                mauris vitae, fringilla mi non condimentum non volutpat posuere<span>. Bibendum
-                                    pellentesque morbi ut sit est. Sodales mauris felis mauris ac quis enim elementum
-                                    massa sodales sagittis. Iaculis dignissim risus feugiat feugiat et ut</span>...
-                            </p>
-                        </div>
-                    </div>
-                    <p class="blog__load-more"><a href="#">Load More <i class="bi bi-chevron-down"></i></a></p>
-                </div>
+    <div class="nav-two">
+      <div class="container">
+        <nav>
+          <ul class="nav-two__menu">
+            <li><a href="./">Home</a></li>
+            <li class="nav-two__dropdown">
+              <a class="nav-two__drop-btn" href="./collection.html">Collection <i class="bi bi-caret-down-fill"></i></a>
+              <div class="nav-two__drop-content">
+                <a href="./themes.html">Themes</a>
+                <a href="./collection.html">MOCs</a>
+              </div>
+            </li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a class="nav-two__current" href="./blog.html" aria-current="page">Blog</a></li>
+          </ul>
+          <ul class="nav-two__socials">
+            <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div id="sidenav" class="sidenav">
+    <div class="container">
+      <div class="sidenav__header">
+        <a id="closeButton" class="sidenav__close" href="#"><i class="bi bi-x-lg"></i></a>
+      </div>
+      <nav>
+        <ul class="sidenav__menu">
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./collection.html">Collection</a></li>
+          <li><a href="./themes.html">Themes</a></li>
+          <li><a href="./collection.html">MOCs</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./blog.html" aria-current="page">Blog</a></li>
+        </ul>
+        <ul class="sidenav__socials">
+          <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div id="overlay" class="overlay"></div>
+  <main class="blog">
+    <div class="container">
+      <div class="blog__content">
+        <h1>Blog</h1>
+        <form action="#" class="blog__search-bar">
+          <input type="text" placeholder="Search"><button type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <div class="blog__filters">
+          <div class="blog__menu">
+            <a href="">Categories</a> ·
+            <a href="">Archive</a>
+          </div>
+          <p class="blog__sort">
+            <span>Sort by:</span> Latest <i class="bi bi-chevron-down"></i>
+          </p>
+        </div>
+        <div class="blog__cards">
+          <div class="card">
+            <a class="card__img" href="./blog-show.html">
+              <img src="./assets/images/lego-heart.jpg" alt="A heart shape made from LEGO">
+            </a>
+            <div class="card__text">
+              <h2><a href="./blog-show.html">Lorem Ipsum Dolor Sit</a></h2>
+              <p class="card__info">7/11/2022 · Posted in <a href="#">Psychology</a></p>
+              <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+                mauris vitae, fringilla mi non condimentum non volutpat posuere<span>. Bibendum
+                  pellentesque morbi ut sit est. Sodales mauris felis mauris ac quis enim elementum
+                  massa sodales sagittis. Iaculis dignissim risus feugiat feugiat et ut</span>...
+              </p>
             </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./blog-show.html">
+              <img src="./assets/images/lego-colored-blocks.jpg" alt="Colored LEGO blocks in a pile">
+            </a>
+            <div class="card__text">
+              <h2><a href="./blog-show.html">Lorem Ipsum Dolor Sit</a></h2>
+              <p class="card__info">3/11/2022 · Posted in <a href="#">Lifestyle</a></p>
+              <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+                mauris vitae, fringilla mi non condimentum non volutpat posuere<span>. Bibendum
+                  pellentesque morbi ut sit est. Sodales mauris felis mauris ac quis enim elementum
+                  massa sodales sagittis. Iaculis dignissim risus feugiat feugiat et ut</span>...
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./blog-show.html">
+              <img src="./assets/images/lego-stormstroopers-pair.jpg" alt="The backs of two LEGO Stormtroopers">
+            </a>
+            <div class="card__text">
+              <h2><a href="./blog-show.html">Lorem Ipsum Dolor Sit</a></h2>
+              <p class="card__info">30/10/2022 · Posted in <a href="#">Education</a>, <a href="#">Science</a></p>
+              <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+                mauris vitae, fringilla mi non condimentum non volutpat posuere<span>. Bibendum
+                  pellentesque morbi ut sit est. Sodales mauris felis mauris ac quis enim elementum
+                  massa sodales sagittis. Iaculis dignissim risus feugiat feugiat et ut</span>...
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card__img" href="./blog-show.html">
+              <img src="./assets/images/lego-face.jpg" alt="A black and white picture of LEGO person's face">
+            </a>
+            <div class="card__text">
+              <h2><a href="./blog-show.html">Lorem Ipsum Dolor Sit</a></h2>
+              <p class="card__info">26/10/2022 · Posted in <a href="#">Philosophy</a></p>
+              <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+                mauris vitae, fringilla mi non condimentum non volutpat posuere<span>. Bibendum
+                  pellentesque morbi ut sit est. Sodales mauris felis mauris ac quis enim elementum
+                  massa sodales sagittis. Iaculis dignissim risus feugiat feugiat et ut</span>...
+              </p>
+            </div>
+          </div>
+          <p class="blog__load-more"><a href="#">Load More <i class="bi bi-chevron-down"></i></a></p>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <nav class="footer__nav">
-                <a class="footer__logo" href="./"><img src="./assets/bb-logo.svg"
-                        alt="Brick-by-Brick Logo"></a>
-                <ul class="footer__menu">
-                    <li><a href="./collection.html">Collection</a></li>
-                    <li><a href="./themes.html">Themes</a></li>
-                    <li><a href="./collection.html">MOCs</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./blog.html" aria-current="page">Blog</a></li>
-                </ul>
-                <div>
-                    <P class="footer__follow">Follow Me<br /></P>
-                    <ul class="footer__socials">
-                        <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-                        </li>
-                        <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer__info">
-                    <p>Terms of Use · Privacy Policy · Accessibility</p>
-                    <p>© Brick-by-Brick 2022</p>
-                    <p>Designed and developed by Wyatt Channings</p>
-                </div>
-            </nav>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__nav">
+        <a class="footer__logo" href="./"><img src="./assets/bb-logo.svg" alt="Brick-by-Brick Logo"></a>
+        <ul class="footer__menu">
+          <li><a href="./collection.html">Collection</a></li>
+          <li><a href="./themes.html">Themes</a></li>
+          <li><a href="./collection.html">MOCs</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./blog.html" aria-current="page">Blog</a></li>
+        </ul>
+        <div>
+          <P class="footer__follow">Follow Me<br /></P>
+          <ul class="footer__socials">
+            <li><a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li><a href="#" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="footer__info">
+          <p>Terms of Use · Privacy Policy · Accessibility</p>
+          <p>© Brick-by-Brick 2023</p>
+          <p>Designed and developed by Wyatt Channings</p>
+        </div>
+      </nav>
+    </div>
+  </footer>
 
-    <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 
